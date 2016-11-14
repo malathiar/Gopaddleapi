@@ -1,0 +1,37 @@
+{
+		"input":
+				{
+					"name":"gopad1"
+				},
+		"output":
+				{
+  					"name":"gopad1",
+   					"parent":[],
+   					"autoscale":{
+      					"min_count":"1",
+      					"cpu_utilization":"70",
+      					"max_count":"1"
+   					},
+   					"id":2,
+   					"networks":{
+      					"ports":"8080"
+   					},
+   					"updated_time":"JSONSTRING",
+   					"script":{
+      					"builder":"Maven",
+      					"build":"mvn package"
+   					},
+   					"created_time":"JSONSTRING",
+   					"repo":{
+      					"repo_path":"https://github.com/malathiarumugam/MavenWeb.git",
+      					"repo_provider":"github",
+      					"repo_tag":"master"
+   					},
+   					"platform":"tomcat:7",
+   					"status":"Creating",
+   					"component_type":"Repository",
+	   				"child":[],
+   					"kind":"github"
+	}
+			
+}

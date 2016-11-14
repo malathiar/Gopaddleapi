@@ -1,0 +1,16 @@
+{
+  "input":{
+	     "name":"#kUBNAME#",
+    	 "initialNodeCount":1,
+     	 "diskSize":100,
+     	 "machine_type":"n1-standard-2",
+     	 "project_id":"bluemeric-1308",
+     	 "zone":"us-east1-b"
+    }, 
+    "output":
+    {
+    	"tx_id":"JSONSTRING",
+    	"success":true
+    	}
+
+}

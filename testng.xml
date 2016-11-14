@@ -1,0 +1,118 @@
+<!-- <suite name="User Test" verbose="1">
+    This parameter will be passed to every test in this suite
+    <parameter name="suite-param" value="suite level parameter" />
+    <test name="userSignup">
+        <classes>
+            <class name="com.paddle.suite.SuiteRunner">
+                <methods>
+                    <include name="userSignup" />
+                </methods>
+            </class>
+        </classes>
+        
+    </test>
+    <test name="userSignin">
+        <classes>
+            <class name="com.paddle.suite.SuiteRunner">
+                <methods>
+                    <include name="userSignin" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="userUpdate">
+        <classes>
+            <class name="com.paddle.suite.SuiteRunner">
+                <methods>
+                    <include name="userUpdate" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="createAWSAC">
+        <classes>
+            <class name="com.paddle.suite.SuiteRunner">
+                <methods>
+                    <include name="createAWSAC" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="updateAWSAC">
+        <classes>
+            <class name="com.paddle.suite.SuiteRunner">
+                <methods>
+                    <include name="updateAWSAC" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    </suite> -->
+    
+    
+ <?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+     <suite name="Suite" parallel="none">
+    <!-- This parameter will be passed to every test in this suite
+     <parameter name="suite-param" value="suite level parameter" />    -->
+     <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+    <test name="listingBlueprints">
+        <classes>
+            <class name="com.paddle.suite.SuiteRunner">
+                <methods>
+                    <include name="listingBlueprints" />
+                </methods>
+            </class>
+        </classes>
+        </test>
+        
+        <test name="searchApplication">
+        <classes>
+            <class name="com.paddle.suite.SuiteRunner">
+                <methods>
+                    <include name="searchApplication" />
+                </methods>
+            </class>
+        </classes>
+        </test>
+        
+        <test name="listingApps">
+        <classes>
+            <class name="com.paddle.suite.SuiteRunner">
+                <methods>
+                    <include name="listingApps" />
+                </methods>
+            </class>
+        </classes>
+        </test>
+        
+        <test name="searchBlueprint">
+        <classes>
+            <class name="com.paddle.suite.SuiteRunner">
+                <methods>
+                    <include name="searchBlueprint" />
+                </methods>
+            </class>
+        </classes>
+        
+    </test>
+    <test name="readGithubAccount">
+        <classes>
+            <class name="com.paddle.suite.SuiteRunner">
+                <methods>
+                    <include name="readGithubAccount" />
+                </methods>
+            </class>
+        </classes>
+      </test>
+    
+     <test name="test">
+		<classes>
+			<class name="com.paddle.suite" />
+	</classes>
+	</test>
+
+      </suite>

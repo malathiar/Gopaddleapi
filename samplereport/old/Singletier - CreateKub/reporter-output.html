@@ -1,0 +1,45 @@
+<h2>Reporter output</h2><table><tr><td>get Response body: = {"handle":"demogopaddle","success":true,"token":"eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0NzIyMDQ0NzgsImhhbmRsZSI6ImRlbW9nb3BhZGRsZSIsImlhdCI6MTQ3MTk0NTI3OCwic3ViIjoiMTQ2MDUyNTM1OTgxODIwMjc2NyJ9.yWmuMAVB2FPqIAH7mM4zOfcADTnNZPNZykJpjAzHzQ48fM4ZHTWJlNUdHgd_6HowfKceuNPCZoJa9JEwDOwzMmHWK32ebpgISm6qiHhCwkcq5VGT2_9HSOJcaX_cYoZd-sbpOQj8yBE6uJz0x1RoZROWq_zyX16iSI11MGAMfrR0MGr2JQmZJDK9sJmxB9ZDm2PSEEhrdIOgtvfJEfPxOPoGC7GOF1vmP1-F9tnKJYYBNMmNQ56ITGf66cNw1fpVZo-88PIZFx11mLNxnKLLcIYdTgcMeI93mAQPBoR2XXZSFvumFm49FPN6-TvGoqG7qHcdDwqBD6WeQTSw6HmqOg","account_id":"1460525359818202767"}</td></tr>
+<tr><td>get Response body: = {"account_id":"1460525359818202767","handle":"demogopaddle","success":true,"token":"eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0NzIyMDQ0NzksImhhbmRsZSI6ImRlbW9nb3BhZGRsZSIsImlhdCI6MTQ3MTk0NTI3OSwic3ViIjoiMTQ2MDUyNTM1OTgxODIwMjc2NyJ9.hk2Re2-Iif68xuJQAfkiT85BYgErInzm0hN4aykqb1MDcixOS8A55nOb92dvLeyteQeVPGGHO_DJPOMd1JhbEy7I_mHiRkxCl_SCYswc0Z6j6b178oASW-4UXc76AVHHw_zyIzF9aEVuU5BMOEOgs7J93OECdtgzpRWaWqejn56CTjQ83XFy_OLEVCLdYc0q7qiX1yyL8mQ2YKzMpiMN7517AeyVOXdsPdFTXClD6MKIAgmm1DJKsVtxheLfdy072O0GOq0Bz0R3VFEa0OzRv21AsNgZ-GS9iSDHSRBjLslPgJj9gq-ZBvfPQHBjzyikIoRKL9AVOPEt42W6ewvFpw"}</td></tr>
+<tr><td>Kube Name : slkub</td></tr>
+<tr><td>Kube ID   : 5b50c565-68e9-11e6-bf85-42010af00003</td></tr>
+<tr><td>Design Name : slrs3-design</td></tr>
+<tr><td>Design Id   : d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"acc_id":"1460525359818202767","components_count":1,"id":"d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b","name":"slrs3-design","app_tag":[],"created_time":"2016-08-23 09:41:52.721644135 +0000 UTC","updated_time":"2016-08-23 09:41:52.721646049 +0000 UTC","status":"Creating","components":[{"status":"Success","id":1,"name":"www","component_type":"NAN","child":[],"parent":[],"created_time":"2016-08-23 09:41:52.721584665 +0000 UTC","updated_time":"2016-08-23 09:41:52.721616932 +0000 UTC"}]}</td></tr>
+<tr><td>Builder              = Native</td></tr>
+<tr><td>startscript1		   = ruby app.rb -o 0.0.0.0</td></tr>
+<tr><td>postinstall1		   = apt-get install -y bundler && bundle install</td></tr>
+<tr><td>Component Type       = Repository</td></tr>
+<tr><td>Component Path       = https://github.com/sailakshmiv/sinatra-example.git</td></tr>
+<tr><td>Repository Provider  = github</td></tr>
+<tr><td>Platform			   = ruby with rbenv:2.3.0</td></tr>
+<tr><td>Ports				   = 4567</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b/component</td></tr>
+<tr><td>Expected Status =  200</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"component_type":"Repository","script":{"start_script":"ruby app.rb -o 0.0.0.0","builder":"Native","post_install":"apt-get install -y bundler && bundle install"},"autoscale":{"cpu_utilization":"70","max_count":"1","min_count":"1"},"name":"git","child":[],"repo":{"repo_provider":"github","repo_tag":"master","repo_path":"https://github.com/sailakshmiv/sinatra-example.git"},"created_time":"2016-08-23 09:42:03.422686641 +0000 UTC","status":"Creating","id":2,"parent":[],"kind":"github","platform":"ruby with rbenv:2.3.0","networks":{"ports":"4567"},"updated_time":"2016-08-23 09:42:03.422705981 +0000 UTC"}</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"success":true,"is_valid":true}</td></tr>
+<tr><td>Actual Response body: = {"success":true,"is_valid":true}</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b</td></tr>
+<tr><td>Expected Status =  200</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"success":true,"tx_id":"1471945325159356536"}</td></tr>
+<tr><td>Actual Response body: = {"tx_id":"JSONSTRING","success":true}</td></tr>
+<tr><td>Launched Application ID : slrs3-app</td></tr>
+<tr><td>External Port			  : 30550</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b</td></tr>
+<tr><td>Expected Status =  200</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"tx_id":"1471945335811950934","success":true}</td></tr>
+<tr><td>Response Status = Hello World</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/a_09eefbc7g8972g46adgaba8g6c0b31005797</td></tr>
+<tr><td>a_09eefbc7g8972g46adgaba8g6c0b31005797 Application Deleted </td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b</td></tr>
+<tr><td>Response Status = Internal Error</td></tr>
+<tr><td>Response Status = 500</td></tr>
+</table>

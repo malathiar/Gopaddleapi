@@ -1,0 +1,19 @@
+{ 	     	
+        	"input":  
+			{
+				"expose_ports":{
+					"#PORTS#":"#ALTPORTS#"
+				},
+				"app_name":"#APPNAME#",
+				"kube_id":"##KUBEID",
+				"cDelivery":false,
+				"autoScale":false,
+				"pod_per_container":true,
+				"enable_firewall":true
+			},
+			"output":
+			{  
+		   "tx_id":"JSONLONG",
+		   "success":true
+}	
+}

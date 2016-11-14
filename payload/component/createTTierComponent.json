@@ -1,0 +1,37 @@
+{
+input:{
+			"component_type":"Datastore",
+   			"data_store":"#NAME#",
+            "path":"#PATH#",
+   			"version":"#VERSION#"
+	},
+	
+output:{
+   "kind":"#NAME#",
+   "data_store":"#NAME#",
+   "autoscale":{
+      "max_count":"1",
+      "min_count":"1",
+      "cpu_utilization":"70"
+   },
+   "version":"#VERSION#",
+   "name":"JSONSTRING",
+   "networks":{
+      "ports":"#PORT#"
+   },
+   "volume":"#sublink#",
+   "child":[
+
+   ],
+   "parent":[
+
+   ],
+   "created_time":"JSONSTRING",
+   "updated_time":"JSONSTRING",
+   "component_type":"Datastore",
+   "is_volume":"true",
+   "path":"#PATH#",
+   "status":"Creating",
+   "id":"JSONINT"
+}
+}

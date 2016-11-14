@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="10" passed="10">
+  <reporter-output>
+    <line>
+      <![CDATA[get Response body: = {"handle":"demogopaddle","success":true,"token":"eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0NzIyMDQ0NzgsImhhbmRsZSI6ImRlbW9nb3BhZGRsZSIsImlhdCI6MTQ3MTk0NTI3OCwic3ViIjoiMTQ2MDUyNTM1OTgxODIwMjc2NyJ9.yWmuMAVB2FPqIAH7mM4zOfcADTnNZPNZykJpjAzHzQ48fM4ZHTWJlNUdHgd_6HowfKceuNPCZoJa9JEwDOwzMmHWK32ebpgISm6qiHhCwkcq5VGT2_9HSOJcaX_cYoZd-sbpOQj8yBE6uJz0x1RoZROWq_zyX16iSI11MGAMfrR0MGr2JQmZJDK9sJmxB9ZDm2PSEEhrdIOgtvfJEfPxOPoGC7GOF1vmP1-F9tnKJYYBNMmNQ56ITGf66cNw1fpVZo-88PIZFx11mLNxnKLLcIYdTgcMeI93mAQPBoR2XXZSFvumFm49FPN6-TvGoqG7qHcdDwqBD6WeQTSw6HmqOg","account_id":"1460525359818202767"}]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"account_id":"1460525359818202767","handle":"demogopaddle","success":true,"token":"eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0NzIyMDQ0NzksImhhbmRsZSI6ImRlbW9nb3BhZGRsZSIsImlhdCI6MTQ3MTk0NTI3OSwic3ViIjoiMTQ2MDUyNTM1OTgxODIwMjc2NyJ9.hk2Re2-Iif68xuJQAfkiT85BYgErInzm0hN4aykqb1MDcixOS8A55nOb92dvLeyteQeVPGGHO_DJPOMd1JhbEy7I_mHiRkxCl_SCYswc0Z6j6b178oASW-4UXc76AVHHw_zyIzF9aEVuU5BMOEOgs7J93OECdtgzpRWaWqejn56CTjQ83XFy_OLEVCLdYc0q7qiX1yyL8mQ2YKzMpiMN7517AeyVOXdsPdFTXClD6MKIAgmm1DJKsVtxheLfdy072O0GOq0Bz0R3VFEa0OzRv21AsNgZ-GS9iSDHSRBjLslPgJj9gq-ZBvfPQHBjzyikIoRKL9AVOPEt42W6ewvFpw"}]]>
+    </line>
+    <line>
+      <![CDATA[Kube Name : slkub]]>
+    </line>
+    <line>
+      <![CDATA[Kube ID   : 5b50c565-68e9-11e6-bf85-42010af00003]]>
+    </line>
+    <line>
+      <![CDATA[Design Name : slrs3-design]]>
+    </line>
+    <line>
+      <![CDATA[Design Id   : d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"acc_id":"1460525359818202767","components_count":1,"id":"d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b","name":"slrs3-design","app_tag":[],"created_time":"2016-08-23 09:41:52.721644135 +0000 UTC","updated_time":"2016-08-23 09:41:52.721646049 +0000 UTC","status":"Creating","components":[{"status":"Success","id":1,"name":"www","component_type":"NAN","child":[],"parent":[],"created_time":"2016-08-23 09:41:52.721584665 +0000 UTC","updated_time":"2016-08-23 09:41:52.721616932 +0000 UTC"}]}]]>
+    </line>
+    <line>
+      <![CDATA[Builder              = Native]]>
+    </line>
+    <line>
+      <![CDATA[startscript1		   = ruby app.rb -o 0.0.0.0]]>
+    </line>
+    <line>
+      <![CDATA[postinstall1		   = apt-get install -y bundler && bundle install]]>
+    </line>
+    <line>
+      <![CDATA[Component Type       = Repository]]>
+    </line>
+    <line>
+      <![CDATA[Component Path       = https://github.com/sailakshmiv/sinatra-example.git]]>
+    </line>
+    <line>
+      <![CDATA[Repository Provider  = github]]>
+    </line>
+    <line>
+      <![CDATA[Platform			   = ruby with rbenv:2.3.0]]>
+    </line>
+    <line>
+      <![CDATA[Ports				   = 4567]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b/component]]>
+    </line>
+    <line>
+      <![CDATA[Expected Status =  200]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"component_type":"Repository","script":{"start_script":"ruby app.rb -o 0.0.0.0","builder":"Native","post_install":"apt-get install -y bundler && bundle install"},"autoscale":{"cpu_utilization":"70","max_count":"1","min_count":"1"},"name":"git","child":[],"repo":{"repo_provider":"github","repo_tag":"master","repo_path":"https://github.com/sailakshmiv/sinatra-example.git"},"created_time":"2016-08-23 09:42:03.422686641 +0000 UTC","status":"Creating","id":2,"parent":[],"kind":"github","platform":"ruby with rbenv:2.3.0","networks":{"ports":"4567"},"updated_time":"2016-08-23 09:42:03.422705981 +0000 UTC"}]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"success":true,"is_valid":true}]]>
+    </line>
+    <line>
+      <![CDATA[Actual Response body: = {"success":true,"is_valid":true}]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b]]>
+    </line>
+    <line>
+      <![CDATA[Expected Status =  200]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"success":true,"tx_id":"1471945325159356536"}]]>
+    </line>
+    <line>
+      <![CDATA[Actual Response body: = {"tx_id":"JSONSTRING","success":true}]]>
+    </line>
+    <line>
+      <![CDATA[Launched Application ID : slrs3-app]]>
+    </line>
+    <line>
+      <![CDATA[External Port			  : 30550]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b]]>
+    </line>
+    <line>
+      <![CDATA[Expected Status =  200]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"tx_id":"1471945335811950934","success":true}]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = Hello World]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/a_09eefbc7g8972g46adgaba8g6c0b31005797]]>
+    </line>
+    <line>
+      <![CDATA[a_09eefbc7g8972g46adgaba8g6c0b31005797 Application Deleted ]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = Internal Error]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 500]]>
+    </line>
+  </reporter-output>
+  <suite name="Singletier - Authorization" duration-ms="1551" started-at="2016-08-23T09:41:20Z" finished-at="2016-08-23T09:41:22Z">
+    <groups>
+    </groups>
+    <test name="connection" duration-ms="1551" started-at="2016-08-23T09:41:20Z" finished-at="2016-08-23T09:41:22Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@bb46b7]" name="createreport" is-config="true" duration-ms="10" started-at="2016-08-23T15:11:20Z" finished-at="2016-08-23T15:11:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1d56e70]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Authorization]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="connection()[pri:0, instance:com.gopaddle.utils.Singletier@bb46b7]" name="connection" duration-ms="1171" started-at="2016-08-23T15:11:20Z" finished-at="2016-08-23T15:11:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[get Response body: = {"account_id":"1460525359818202767","handle":"demogopaddle","success":true,"token":"eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0NzIyMDQ0NzksImhhbmRsZSI6ImRlbW9nb3BhZGRsZSIsImlhdCI6MTQ3MTk0NTI3OSwic3ViIjoiMTQ2MDUyNTM1OTgxODIwMjc2NyJ9.hk2Re2-Iif68xuJQAfkiT85BYgErInzm0hN4aykqb1MDcixOS8A55nOb92dvLeyteQeVPGGHO_DJPOMd1JhbEy7I_mHiRkxCl_SCYswc0Z6j6b178oASW-4UXc76AVHHw_zyIzF9aEVuU5BMOEOgs7J93OECdtgzpRWaWqejn56CTjQ83XFy_OLEVCLdYc0q7qiX1yyL8mQ2YKzMpiMN7517AeyVOXdsPdFTXClD6MKIAgmm1DJKsVtxheLfdy072O0GOq0Bz0R3VFEa0OzRv21AsNgZ-GS9iSDHSRBjLslPgJj9gq-ZBvfPQHBjzyikIoRKL9AVOPEt42W6ewvFpw"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- connection -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@bb46b7]" name="screenshot" is-config="true" duration-ms="350" started-at="2016-08-23T15:11:21Z" finished-at="2016-08-23T15:11:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=connection status=SUCCESS method=Singletier.connection()[pri:0, instance:com.gopaddle.utils.Singletier@bb46b7] output=get Response body: = {"account_id":"1460525359818202767","handle":"demogopaddle","success":true,"token":"eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0NzIyMDQ0NzksImhhbmRsZSI6ImRlbW9nb3BhZGRsZSIsImlhdCI6MTQ3MTk0NTI3OSwic3ViIjoiMTQ2MDUyNTM1OTgxODIwMjc2NyJ9.hk2Re2-Iif68xuJQAfkiT85BYgErInzm0hN4aykqb1MDcixOS8A55nOb92dvLeyteQeVPGGHO_DJPOMd1JhbEy7I_mHiRkxCl_SCYswc0Z6j6b178oASW-4UXc76AVHHw_zyIzF9aEVuU5BMOEOgs7J93OECdtgzpRWaWqejn56CTjQ83XFy_OLEVCLdYc0q7qiX1yyL8mQ2YKzMpiMN7517AeyVOXdsPdFTXClD6MKIAgmm1DJKsVtxheLfdy072O0GOq0Bz0R3VFEa0OzRv21AsNgZ-GS9iSDHSRBjLslPgJj9gq-ZBvfPQHBjzyikIoRKL9AVOPEt42W6ewvFpw"}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Authorization]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- connection -->
+  </suite> <!-- Singletier - Authorization -->
+  <suite name="Singletier - CreateKub" duration-ms="31839" started-at="2016-08-23T09:41:22Z" finished-at="2016-08-23T09:41:54Z">
+    <groups>
+    </groups>
+    <test name="getkubId" duration-ms="31839" started-at="2016-08-23T09:41:22Z" finished-at="2016-08-23T09:41:54Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@24a45e]" name="createreport" is-config="true" duration-ms="0" started-at="2016-08-23T15:11:22Z" finished-at="2016-08-23T15:11:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@145b679]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CreateKub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="getkubId(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@24a45e]" name="getkubId" duration-ms="31789" started-at="2016-08-23T15:11:22Z" finished-at="2016-08-23T15:11:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[slkub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Kube Name : slkub]]>
+            </line>
+            <line>
+              <![CDATA[Kube ID   : 5b50c565-68e9-11e6-bf85-42010af00003]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getkubId -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@24a45e]" name="screenshot" is-config="true" duration-ms="50" started-at="2016-08-23T15:11:54Z" finished-at="2016-08-23T15:11:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getkubId status=SUCCESS method=Singletier.getkubId(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@24a45e] output=Kube Name : slkub]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CreateKub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- getkubId -->
+  </suite> <!-- Singletier - CreateKub -->
+  <suite name="Singletier - RubyOnSintra-Git-NativeBuilder" duration-ms="171491" started-at="2016-08-23T09:41:54Z" finished-at="2016-08-23T09:44:45Z">
+    <groups>
+    </groups>
+    <test name="createDesign" duration-ms="714" started-at="2016-08-23T09:41:54Z" finished-at="2016-08-23T09:41:54Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1172aa6]" name="createreport" is-config="true" duration-ms="0" started-at="2016-08-23T15:11:54Z" finished-at="2016-08-23T15:11:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1cee369]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="createDesign(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1172aa6]" name="createDesign" duration-ms="654" started-at="2016-08-23T15:11:54Z" finished-at="2016-08-23T15:11:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[slrs3-design]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Design Name : slrs3-design]]>
+            </line>
+            <line>
+              <![CDATA[Design Id   : d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b]]>
+            </line>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"acc_id":"1460525359818202767","components_count":1,"id":"d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b","name":"slrs3-design","app_tag":[],"created_time":"2016-08-23 09:41:52.721644135 +0000 UTC","updated_time":"2016-08-23 09:41:52.721646049 +0000 UTC","status":"Creating","components":[{"status":"Success","id":1,"name":"www","component_type":"NAN","child":[],"parent":[],"created_time":"2016-08-23 09:41:52.721584665 +0000 UTC","updated_time":"2016-08-23 09:41:52.721616932 +0000 UTC"}]}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createDesign -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1172aa6]" name="screenshot" is-config="true" duration-ms="60" started-at="2016-08-23T15:11:54Z" finished-at="2016-08-23T15:11:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createDesign status=SUCCESS method=Singletier.createDesign(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1172aa6] output=Design Name : slrs3-design]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- createDesign -->
+    <test name="CreateComponent" duration-ms="11007" started-at="2016-08-23T09:41:54Z" finished-at="2016-08-23T09:42:05Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="CreateComponent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@d330da]" name="CreateComponent" duration-ms="10957" started-at="2016-08-23T15:11:54Z" finished-at="2016-08-23T15:12:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[slrs3-design]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://github.com/sailakshmiv/sinatra-example.git]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[github]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Native]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[ruby with rbenv:2.3.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[4567]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[apt-get install -y bundler && bundle install]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[ruby app.rb -o 0.0.0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Builder              = Native]]>
+            </line>
+            <line>
+              <![CDATA[startscript1		   = ruby app.rb -o 0.0.0.0]]>
+            </line>
+            <line>
+              <![CDATA[postinstall1		   = apt-get install -y bundler && bundle install]]>
+            </line>
+            <line>
+              <![CDATA[Component Type       = Repository]]>
+            </line>
+            <line>
+              <![CDATA[Component Path       = https://github.com/sailakshmiv/sinatra-example.git]]>
+            </line>
+            <line>
+              <![CDATA[Repository Provider  = github]]>
+            </line>
+            <line>
+              <![CDATA[Platform			   = ruby with rbenv:2.3.0]]>
+            </line>
+            <line>
+              <![CDATA[Ports				   = 4567]]>
+            </line>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b/component]]>
+            </line>
+            <line>
+              <![CDATA[Expected Status =  200]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"component_type":"Repository","script":{"start_script":"ruby app.rb -o 0.0.0.0","builder":"Native","post_install":"apt-get install -y bundler && bundle install"},"autoscale":{"cpu_utilization":"70","max_count":"1","min_count":"1"},"name":"git","child":[],"repo":{"repo_provider":"github","repo_tag":"master","repo_path":"https://github.com/sailakshmiv/sinatra-example.git"},"created_time":"2016-08-23 09:42:03.422686641 +0000 UTC","status":"Creating","id":2,"parent":[],"kind":"github","platform":"ruby with rbenv:2.3.0","networks":{"ports":"4567"},"updated_time":"2016-08-23 09:42:03.422705981 +0000 UTC"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateComponent -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@d330da]" name="createreport" is-config="true" duration-ms="0" started-at="2016-08-23T15:11:54Z" finished-at="2016-08-23T15:11:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b42753]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@d330da]" name="screenshot" is-config="true" duration-ms="50" started-at="2016-08-23T15:12:05Z" finished-at="2016-08-23T15:12:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CreateComponent status=SUCCESS method=Singletier.CreateComponent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@d330da] output=Builder              = Native]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- CreateComponent -->
+    <test name="linkComponent" duration-ms="710" started-at="2016-08-23T09:42:05Z" finished-at="2016-08-23T09:42:06Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@153de6c]" name="createreport" is-config="true" duration-ms="0" started-at="2016-08-23T15:12:05Z" finished-at="2016-08-23T15:12:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@17a8551]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="linkComponent(java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@153de6c]" name="linkComponent" duration-ms="640" started-at="2016-08-23T15:12:05Z" finished-at="2016-08-23T15:12:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"success":true,"is_valid":true}]]>
+            </line>
+            <line>
+              <![CDATA[Actual Response body: = {"success":true,"is_valid":true}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- linkComponent -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@153de6c]" name="screenshot" is-config="true" duration-ms="70" started-at="2016-08-23T15:12:06Z" finished-at="2016-08-23T15:12:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=linkComponent status=SUCCESS method=Singletier.linkComponent(java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@153de6c] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- linkComponent -->
+    <test name="publishDesign" duration-ms="670" started-at="2016-08-23T09:42:06Z" finished-at="2016-08-23T09:42:07Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@110422a]" name="createreport" is-config="true" duration-ms="10" started-at="2016-08-23T15:12:06Z" finished-at="2016-08-23T15:12:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@c68ba6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="publishDesign()[pri:0, instance:com.gopaddle.utils.Singletier@110422a]" name="publishDesign" duration-ms="620" started-at="2016-08-23T15:12:06Z" finished-at="2016-08-23T15:12:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b]]>
+            </line>
+            <line>
+              <![CDATA[Expected Status =  200]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"success":true,"tx_id":"1471945325159356536"}]]>
+            </line>
+            <line>
+              <![CDATA[Actual Response body: = {"tx_id":"JSONSTRING","success":true}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- publishDesign -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@110422a]" name="screenshot" is-config="true" duration-ms="40" started-at="2016-08-23T15:12:07Z" finished-at="2016-08-23T15:12:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=publishDesign status=SUCCESS method=Singletier.publishDesign()[pri:0, instance:com.gopaddle.utils.Singletier@110422a] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- publishDesign -->
+    <test name="launchApp" duration-ms="11273" started-at="2016-08-23T09:42:07Z" finished-at="2016-08-23T09:42:18Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="launchApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1771b9b]" name="launchApp" duration-ms="11242" started-at="2016-08-23T15:12:07Z" finished-at="2016-08-23T15:12:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[slrs3-app]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4567]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[30550]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Launched Application ID : slrs3-app]]>
+            </line>
+            <line>
+              <![CDATA[External Port			  : 30550]]>
+            </line>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b]]>
+            </line>
+            <line>
+              <![CDATA[Expected Status =  200]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"tx_id":"1471945335811950934","success":true}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1771b9b]" name="createreport" is-config="true" duration-ms="0" started-at="2016-08-23T15:12:07Z" finished-at="2016-08-23T15:12:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@fa5747]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1771b9b]" name="screenshot" is-config="true" duration-ms="31" started-at="2016-08-23T15:12:18Z" finished-at="2016-08-23T15:12:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=launchApp status=SUCCESS method=Singletier.launchApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1771b9b] output=Launched Application ID : slrs3-app]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- launchApp -->
+    <test name="accessValidation" duration-ms="103714" started-at="2016-08-23T09:42:18Z" finished-at="2016-08-23T09:44:02Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@d9278f]" name="createreport" is-config="true" duration-ms="0" started-at="2016-08-23T15:12:18Z" finished-at="2016-08-23T15:12:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1782e36]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="accessValidation(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@d9278f]" name="accessValidation" duration-ms="103653" started-at="2016-08-23T15:12:18Z" finished-at="2016-08-23T15:14:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Response Status = Hello World]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- accessValidation -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@d9278f]" name="screenshot" is-config="true" duration-ms="61" started-at="2016-08-23T15:14:02Z" finished-at="2016-08-23T15:14:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=accessValidation status=SUCCESS method=Singletier.accessValidation(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@d9278f] output=Response Status = Hello World]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- accessValidation -->
+    <test name="deleteApp" duration-ms="22693" started-at="2016-08-23T09:44:02Z" finished-at="2016-08-23T09:44:24Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="deleteApp()[pri:0, instance:com.gopaddle.utils.Singletier@5cdd29]" name="deleteApp" duration-ms="22643" started-at="2016-08-23T15:14:02Z" finished-at="2016-08-23T15:14:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/a_09eefbc7g8972g46adgaba8g6c0b31005797]]>
+            </line>
+            <line>
+              <![CDATA[a_09eefbc7g8972g46adgaba8g6c0b31005797 Application Deleted ]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteApp -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@5cdd29]" name="createreport" is-config="true" duration-ms="0" started-at="2016-08-23T15:14:02Z" finished-at="2016-08-23T15:14:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@121ef78]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@5cdd29]" name="screenshot" is-config="true" duration-ms="50" started-at="2016-08-23T15:14:24Z" finished-at="2016-08-23T15:14:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteApp status=SUCCESS method=Singletier.deleteApp()[pri:0, instance:com.gopaddle.utils.Singletier@5cdd29] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/a_09eefbc7g8972g46adgaba8g6c0b31005797]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- deleteApp -->
+    <test name="deleteDesign" duration-ms="20660" started-at="2016-08-23T09:44:24Z" finished-at="2016-08-23T09:44:45Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1ec0762]" name="createreport" is-config="true" duration-ms="0" started-at="2016-08-23T15:14:24Z" finished-at="2016-08-23T15:14:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@f0d1b6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="deleteDesign(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1ec0762]" name="deleteDesign" duration-ms="20619" started-at="2016-08-23T15:14:24Z" finished-at="2016-08-23T15:14:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[slrs3-design]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = Internal Error]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 500]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteDesign -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1ec0762]" name="screenshot" is-config="true" duration-ms="41" started-at="2016-08-23T15:14:45Z" finished-at="2016-08-23T15:14:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteDesign status=SUCCESS method=Singletier.deleteDesign(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1ec0762] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RubyOnSintra-Git-NativeBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- deleteDesign -->
+  </suite> <!-- Singletier - RubyOnSintra-Git-NativeBuilder -->
+</testng-results>

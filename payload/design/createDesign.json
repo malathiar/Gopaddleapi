@@ -1,0 +1,21 @@
+{ 	     	
+        	"input":{  
+					   "name":"#DESIGNNAME#"
+			},
+			
+			"output":
+			{
+   				"updated_time":"JSONSTRING",
+   				"status":"Creating",
+   				"components_count":1,
+   				"components":"JSONARRAY",
+   				"id":"JSONSTRING",
+   				"created_time":"JSONSTRING",
+   				"app_tag":[
+					   ],
+   				"name":"#DESIGNNAME#",
+   				"acc_id":"JSONSTRING"
+	}
+			
+			
+}

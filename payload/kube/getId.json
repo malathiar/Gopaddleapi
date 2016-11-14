@@ -1,0 +1,30 @@
+{
+            "input" :{
+					}, 
+            "output" : 
+            {
+   "success":true,
+   "result":[
+      {
+         "zone":"",
+         "name":"",
+         "ip":"",
+         "provider":"",
+         "account_id":"JSONLONG",
+         "id":"JSONSTRING",
+         "project_id":""
+      },
+      {
+         "provider":"Google",
+         "account_id":"JSONLONG",
+         "id":"JSONSTRING",
+         "project_id":"delta-student-431",
+         "zone":"JSONSTRING",
+         "name":"JSONSTRING",
+         "ip":"JSONSRING"
+      }
+   ],
+   "count":"JSONINT"
+}
+
+}

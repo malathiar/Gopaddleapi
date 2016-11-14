@@ -1,0 +1,177 @@
+<h2>Reporter output</h2><table><tr><td>get Response body: = {"handle":"demogopaddle","success":true,"token":"eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0NzkzNzg5MzcsImhhbmRsZSI6ImRlbW9nb3BhZGRsZSIsImlhdCI6MTQ3OTExOTczNywic3ViIjoiMTQ2MDUyNTM1OTgxODIwMjc2NyJ9.mU1KDkJnBHRxARZC8TEz3eOkrdP44PT7gsTLW4W4L2nuOA97Pt8D3wPo_4LY2jhIxBwk-ALEwZlMi1WpAq86z960Lx9kcYnLiioxavzWcKxXZUeFMEH65Y1Yoxom-jk8ztmWo2z6LcxJfh4wyJsq7SfFgX8ZEskmw3kKgvW5d_oEmLDgQL0kUk7AdzMCk_NR5PvZrIfNqPfUHN1cUT8wYcwrwfm7Nh7kD2E3gFP6l2wt8cJOBqeN33cQpHczfLX8_rJmj3E4Hh8xfEz2nLtsgtGRy8V3xkZQy_x1bme6UnyRm4IO8z3AwDQ-KtPoxm3GNV2GEtptyCSeII4RiOJX0Q","account_id":"1460525359818202767"}</td></tr>
+<tr><td>get Response body: = {"account_id":"1460525359818202767","handle":"demogopaddle","success":true,"token":"eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0NzkzNzg5NDAsImhhbmRsZSI6ImRlbW9nb3BhZGRsZSIsImlhdCI6MTQ3OTExOTc0MCwic3ViIjoiMTQ2MDUyNTM1OTgxODIwMjc2NyJ9.uorHoapEqmNrBnBB_eDVNpyfueGKz76knL4ph9eqMlLpwwb7pe4lPWd7ucp96LmfxdJI1ZTANzj-41l00Uz-IjroU_pbcArPsBnfgJ_222vpxfTw4dF7mIRbit3X1wKGwz_nIXDT6D7c9CM15fajhjC3VwCmE1cuPj72hCHKhvj6m7ceInxKPxg5j4MnVTNHrkxgiGK8-7gSZupgu_G8e-E7vlCQ-k7v33pLD78eaUa-PUJt7yOvCNfKfCHi-g2PXUa2R6zWButK5Hz4tfcq4uG3t7VRAfN6dOfiUO4LbFTuC9DzDn_Qsg_u6RuArMzHsRKoUf1Y0smAOhQh7uieXQ"}</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>Request Body = {
+ machine_type : "n1-standard-2",
+ name : "testqa",
+ project_id : "bluemeric-1308",
+ initialNodeCount : 1,
+ diskSize : 100,
+ zone : "us-east1-b" }</td></tr>
+<tr><td>Response Message = {
+ tx_id : "1479119741616272074",
+ success : true }</td></tr>
+<tr><td>Response Message = {
+ result : [{
+ id : "5c800192-aa55-11e6-8cd9-42010af00006",
+ kube_url : "https://console.developers.google.com/kubernetes/clusters/details/asia-east1-a/vmtest01?project=bluemeric-1308",
+ account_id : "1460525359818202767",
+ name : "vmtest01",
+ provider_env :{
+ project_id : "bluemeric-1308",
+ zone : "asia-east1-a",
+ network : "default" },
+ state : "",
+ provider : "Google",
+ env : "",
+ type : "kube",
+ ip : "104.199.192.120" }{
+ kube_url : "https://console.developers.google.com/kubernetes/clusters/details/us-east1-b/testqa?project=bluemeric-1308",
+ id : "178d1793-aa56-11e6-8cd9-42010af00006",
+ account_id : "1460525359818202767",
+ name : "testqa",
+ state : "Creating",
+ provider_env :{
+ project_id : "bluemeric-1308",
+ zone : "us-east1-b" },
+ provider : "Google",
+ env : "",
+ type : "kube",
+ ip : "" } ],
+ count : 2,
+ success : true }</td></tr>
+<tr><td>Kube Name : testqa</td></tr>
+<tr><td>Kube ID   : 9592a85f-aa56-11e6-8cd9-42010af00006</td></tr>
+<tr><td>Design Name : sla-design</td></tr>
+<tr><td>Design Id   : d_b7907366g48b5g4cefgbdf7g936512b5875d</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"id":"d_b7907366g48b5g4cefgbdf7g936512b5875d","name":"sla-design","components_count":1,"components":[{"name":"www","component_type":"NAN","child":[],"parent":[],"created_time":"2016-11-14 10:39:53.329858486 +0000 UTC","updated_time":"2016-11-14 10:39:53.329875905 +0000 UTC","status":"Success","id":1}],"acc_id":"1460525359818202767","app_tag":[],"created_time":"2016-11-14 10:39:53.32989662 +0000 UTC","updated_time":"2016-11-14 10:39:53.329898444 +0000 UTC","status":"Creating"}</td></tr>
+<tr><td>Builder              = Ant</td></tr>
+<tr><td>Component Type       = Repository</td></tr>
+<tr><td>Component Path       = https://github.com/sailakshmiv/antapp.git</td></tr>
+<tr><td>Repository Provider  = github</td></tr>
+<tr><td>Platform			   = tomcat:7</td></tr>
+<tr><td>Ports				   = 8080</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d/component</td></tr>
+<tr><td>Expected Status =  200</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"name":"git","component_type":"Repository","created_time":"2016-11-14 10:40:04.130064481 +0000 UTC","kind":"github","repo":{"repo_path":"https://github.com/sailakshmiv/antapp.git","repo_provider":"github","repo_tag":"master"},"autoscale":{"max_count":"1","min_count":"1","cpu_utilization":"70"},"networks":{"ports":"8080"},"script":{"builder":"Ant","build":"ant"},"updated_time":"2016-11-14 10:40:04.130076448 +0000 UTC","id":2,"child":[],"parent":[],"platform":"tomcat:7","status":"Creating"}</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"success":true,"is_valid":true}</td></tr>
+<tr><td>Actual Response body: = {"success":true,"is_valid":true}</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d</td></tr>
+<tr><td>Expected Status =  200</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"success":true,"tx_id":"1479120005671774503"}</td></tr>
+<tr><td>Actual Response body: = {"tx_id":"JSONSTRING","success":true}</td></tr>
+<tr><td>Launched Application ID : sla-app</td></tr>
+<tr><td>External Port			  : 30552</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/d_b7907366g48b5g4cefgbdf7g936512b5875d</td></tr>
+<tr><td>Expected Status =  200</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"tx_id":"1479120026371652025","success":true}</td></tr>
+<tr><td>Application :Success</td></tr>
+<tr><td>Response Status = <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Insert title here</title></head><body><a href="HelloWorld">click Here-goPaddle Bluemeric ANTAPP DEMOnewapp</a></body></html></td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/a_d9eb5ea7ged90g4c79g9310gd60cc256936e</td></tr>
+<tr><td>a_d9eb5ea7ged90g4c79g9310gd60cc256936e Application Deleted </td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d</td></tr>
+<tr><td>Response Status = 204</td></tr>
+<tr><td>Design Name : slndnew-design</td></tr>
+<tr><td>Design Id   : d_cee58ceagac47g4aeaga520g1718c548cb5c</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"acc_id":"1460525359818202767","app_tag":[],"updated_time":"2016-11-14 10:42:44.980352442 +0000 UTC","status":"Creating","components":[{"child":[],"parent":[],"created_time":"2016-11-14 10:42:44.980308929 +0000 UTC","updated_time":"2016-11-14 10:42:44.980330127 +0000 UTC","status":"Success","id":1,"name":"www","component_type":"NAN"}],"id":"d_cee58ceagac47g4aeaga520g1718c548cb5c","name":"slndnew-design","created_time":"2016-11-14 10:42:44.980350729 +0000 UTC","components_count":1}</td></tr>
+<tr><td>Builder              = Native</td></tr>
+<tr><td>startscript1		   = npm start</td></tr>
+<tr><td>postinstall1		   = npm install</td></tr>
+<tr><td>Component Type       = Repository</td></tr>
+<tr><td>Component Path       = https://github.com/sailakshmiv/Quiz-Application.git</td></tr>
+<tr><td>Repository Provider  = github</td></tr>
+<tr><td>Platform			   = nodejs:v5.0</td></tr>
+<tr><td>Ports				   = 8000</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c/component</td></tr>
+<tr><td>Expected Status =  200</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"name":"git","child":[],"kind":"github","autoscale":{"cpu_utilization":"70","max_count":"1","min_count":"1"},"repo":{"repo_provider":"github","repo_tag":"master","repo_path":"https://github.com/sailakshmiv/Quiz-Application.git"},"networks":{"ports":"8000"},"script":{"builder":"Native","start_script":"npm start","post_install":"npm install"},"parent":[],"updated_time":"2016-11-14 10:42:56.593816565 +0000 UTC","status":"Creating","id":2,"component_type":"Repository","platform":"nodejs:v5.0","created_time":"2016-11-14 10:42:56.593805494 +0000 UTC"}</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c/component</td></tr>
+<tr><td>Component Type       = Datastore</td></tr>
+<tr><td>DataStore		       = mysql</td></tr>
+<tr><td>Version			   = 5.6</td></tr>
+<tr><td>Path		           = https://storage.googleapis.com/paddle-slkubmcation-donotdelete/dbdata.tgz</td></tr>
+<tr><td>Ports					   = 3306</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"parent":[],"Postgresql":"","path":"https://storage.googleapis.com/paddle-slkubmcation-donotdelete/dbdata.tgz","created_time":"2016-11-14 10:42:57.517104373 +0000 UTC","status":"Creating","updated_time":"2016-11-14 10:42:57.51711832 +0000 UTC","id":3,"child":[],"kind":"mysql","is_volume":"true","networks":{"ports":"3306"},"component_type":"Datastore","mysql":"","volume":"/var/lib/mysql","autoscale":{"max_count":"1","min_count":"1","cpu_utilization":"70"},"name":"c-v6upc","data_store":"mysql","version":"5.6","mongodb":"","cassandra":""}</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"success":true,"is_valid":false}</td></tr>
+<tr><td>Actual Response body: = {"success":true,"is_valid":true}</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"success":true,"is_valid":true}</td></tr>
+<tr><td>Actual Response body: = {"success":true,"is_valid":true}</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c</td></tr>
+<tr><td>Expected Status =  200</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"success":true,"tx_id":"1479120179668711846"}</td></tr>
+<tr><td>Actual Response body: = {"tx_id":"JSONSTRING","success":true}</td></tr>
+<tr><td>Launched Application ID : slndnew-app</td></tr>
+<tr><td>External Port			  : 30604</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/d_cee58ceagac47g4aeaga520g1718c548cb5c</td></tr>
+<tr><td>Expected Status =  200</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"tx_id":"1479120200368573586","success":true}</td></tr>
+<tr><td>Application :Success</td></tr>
+<tr><td>Response Status = <!DOCTYPE html>  <html lang="en">    <head>    <meta charset="utf-8">    <title>Login</title>    <meta name="Arjun" content="">    <!-- styles -->    <link href="stylesheets/login_page.css" rel="stylesheet">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    <script src ="javascripts/login.js"></script>   </head>  <body	>    <div class="center-div">    	<form id="login_form" method="post">          Username: <input type="text" name="username"><br>          Password: <input type="password" name="password"><br>          <div class="center-button">  		      <input id="login_submit_button" type="submit" value="Submit">          </div>  	  </form>    </div>      </body></html> </td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>Design Name : slnm14-design</td></tr>
+<tr><td>Design Id   : d_2b5c4c6agdd31g4a16gadccg92d67668e28c</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"updated_time":"2016-11-14 10:45:46.239221599 +0000 UTC","name":"slnm14-design","acc_id":"1460525359818202767","app_tag":[],"created_time":"2016-11-14 10:45:46.239219865 +0000 UTC","status":"Creating","components_count":1,"components":[{"parent":[],"created_time":"2016-11-14 10:45:46.239189455 +0000 UTC","updated_time":"2016-11-14 10:45:46.239203402 +0000 UTC","status":"Success","id":1,"name":"www","component_type":"NAN","child":[]}],"id":"d_2b5c4c6agdd31g4a16gadccg92d67668e28c"}</td></tr>
+<tr><td>Builder              = Native</td></tr>
+<tr><td>startscript1		   = node server.js</td></tr>
+<tr><td>postinstall1		   = npm install</td></tr>
+<tr><td>Component Type       = Repository</td></tr>
+<tr><td>Component Path       = https://github.com/sailakshmiv/real-time-chat.git</td></tr>
+<tr><td>Repository Provider  = github</td></tr>
+<tr><td>Platform			   = nodejs:v5.0</td></tr>
+<tr><td>Ports				   = 9100</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c/component</td></tr>
+<tr><td>Expected Status =  200</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"id":2,"component_type":"Repository","networks":{"ports":"9100"},"script":{"builder":"Native","post_install":"npm install","start_script":"node server.js"},"created_time":"2016-11-14 10:45:56.974580582 +0000 UTC","updated_time":"2016-11-14 10:45:56.974592526 +0000 UTC","kind":"github","platform":"nodejs:v5.0","autoscale":{"min_count":"1","cpu_utilization":"70","max_count":"1"},"status":"Creating","name":"git","child":[],"parent":[],"repo":{"repo_path":"https://github.com/sailakshmiv/real-time-chat.git","repo_provider":"github","repo_tag":"master"}}</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c/component</td></tr>
+<tr><td>Component Type       = Datastore</td></tr>
+<tr><td>DataStore		       = mongodb</td></tr>
+<tr><td>Version			   = 3.2</td></tr>
+<tr><td>Path		           = </td></tr>
+<tr><td>Ports					   = 27017</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"created_time":"2016-11-14 10:45:57.798048349 +0000 UTC","name":"c-n3eal","kind":"mongodb","data_store":"mongodb","networks":{"ports":"27017"},"parent":[],"version":"3.2","cassandra":"","is_volume":"true","volume":"/var/lib/mongodb","updated_time":"2016-11-14 10:45:57.798061569 +0000 UTC","status":"Creating","mongodb":"","mysql":"","path":"","autoscale":{"cpu_utilization":"70","max_count":"1","min_count":"1"},"id":3,"component_type":"Datastore","child":[],"Postgresql":""}</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"is_valid":false,"success":true}</td></tr>
+<tr><td>Actual Response body: = {"success":true,"is_valid":true}</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"success":true,"is_valid":true}</td></tr>
+<tr><td>Actual Response body: = {"success":true,"is_valid":true}</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c</td></tr>
+<tr><td>Expected Status =  200</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"success":true,"tx_id":"1479120359974984932"}</td></tr>
+<tr><td>Actual Response body: = {"tx_id":"JSONSTRING","success":true}</td></tr>
+<tr><td>Launched Application ID : slnm14-app</td></tr>
+<tr><td>External Port			  : 30629</td></tr>
+<tr><td>Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/d_2b5c4c6agdd31g4a16gadccg92d67668e28c</td></tr>
+<tr><td>Expected Status =  200</td></tr>
+<tr><td>Response Status = 200</td></tr>
+<tr><td>get Response body: = {"tx_id":"1479120380668549576","success":true}</td></tr>
+<tr><td>Application :Success</td></tr>
+<tr><td>Response Status = <!doctype html><html lang="en"><head>    <meta charset="UTF-8">    <title>Real-Time Chat</title>    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css">    <link rel="stylesheet" href="css/styles.css"></head><body>    <div class="vertical-center">        <div class="container">            <div class="row">                <div class="col-md-4 col-md-offset-4">                    <h1 class="text-center">Join Chat</h1>                    <form action="/chat.html">                        <div class="form-group">                            <label for="name">Display Name:</label>                            <div class="input-group">                            <span class="input-group-addon">                                <i class="glyphicon glyphicon-user"></i>                            </span>                                <input type="text" id="name" name="name" class="form-control">                            </div>                        </div>                        <div class="form-group">                            <label for="room">Room Name:</label>                            <div class="input-group">                            <span class="input-group-addon">                                <i class="glyphicon glyphicon-comment"></i>                            </span>                                <input type="text" id="room" name="room" class="form-control">                            </div>                        </div>                        <div class="form-group">                            <input type="submit" class="btn btn-primary btn-block" value="Join Chat">                        </div>                    </form>                </div>            </div>        </div>    </div></body></html></td></tr>
+<tr><td>Response Status = 200</td></tr>
+</table>

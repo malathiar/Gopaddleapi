@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>TestNG:  createDesign</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>createDesign</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 23 15:11:54 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (714 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.gopaddle.utils.Singletier.createDesign()'><b>createDesign</b><br>Test class: com.gopaddle.utils.Singletier<br>Parameters: slrs3-design<br/>
+<a href="#Output-1691945" onClick='toggleBox("Output-1691945", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1691945" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1691945">
+Design Name : slrs3-design<br/>
+Design Id   : d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b<br/>
+Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design<br/>
+Response Status = 200<br/>
+get Response body: = {"acc_id":"1460525359818202767","components_count":1,"id":"d_d8d995f6g8f95g4f6bgb4d4g9d1a00c46c0b","name":"slrs3-design","app_tag":[],"created_time":"2016-08-23 09:41:52.721644135 +0000 UTC","updated_time":"2016-08-23 09:41:52.721646049 +0000 UTC","status":"Creating","components":[{"status":"Success","id":1,"name":"www","component_type":"NAN","child":[],"parent":[],"created_time":"2016-08-23 09:41:52.721584665 +0000 UTC","updated_time":"2016-08-23 09:41:52.721616932 +0000 UTC"}]}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.gopaddle.utils.Singletier@1172aa6</td></tr>
+</table><p>
+</body>
+</html>

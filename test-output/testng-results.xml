@@ -1,0 +1,2507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="28" passed="28">
+  <reporter-output>
+    <line>
+      <![CDATA[get Response body: = {"handle":"demogopaddle","success":true,"token":"eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0NzkzNzg5MzcsImhhbmRsZSI6ImRlbW9nb3BhZGRsZSIsImlhdCI6MTQ3OTExOTczNywic3ViIjoiMTQ2MDUyNTM1OTgxODIwMjc2NyJ9.mU1KDkJnBHRxARZC8TEz3eOkrdP44PT7gsTLW4W4L2nuOA97Pt8D3wPo_4LY2jhIxBwk-ALEwZlMi1WpAq86z960Lx9kcYnLiioxavzWcKxXZUeFMEH65Y1Yoxom-jk8ztmWo2z6LcxJfh4wyJsq7SfFgX8ZEskmw3kKgvW5d_oEmLDgQL0kUk7AdzMCk_NR5PvZrIfNqPfUHN1cUT8wYcwrwfm7Nh7kD2E3gFP6l2wt8cJOBqeN33cQpHczfLX8_rJmj3E4Hh8xfEz2nLtsgtGRy8V3xkZQy_x1bme6UnyRm4IO8z3AwDQ-KtPoxm3GNV2GEtptyCSeII4RiOJX0Q","account_id":"1460525359818202767"}]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"account_id":"1460525359818202767","handle":"demogopaddle","success":true,"token":"eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0NzkzNzg5NDAsImhhbmRsZSI6ImRlbW9nb3BhZGRsZSIsImlhdCI6MTQ3OTExOTc0MCwic3ViIjoiMTQ2MDUyNTM1OTgxODIwMjc2NyJ9.uorHoapEqmNrBnBB_eDVNpyfueGKz76knL4ph9eqMlLpwwb7pe4lPWd7ucp96LmfxdJI1ZTANzj-41l00Uz-IjroU_pbcArPsBnfgJ_222vpxfTw4dF7mIRbit3X1wKGwz_nIXDT6D7c9CM15fajhjC3VwCmE1cuPj72hCHKhvj6m7ceInxKPxg5j4MnVTNHrkxgiGK8-7gSZupgu_G8e-E7vlCQ-k7v33pLD78eaUa-PUJt7yOvCNfKfCHi-g2PXUa2R6zWButK5Hz4tfcq4uG3t7VRAfN6dOfiUO4LbFTuC9DzDn_Qsg_u6RuArMzHsRKoUf1Y0smAOhQh7uieXQ"}]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[Request Body = {
+ machine_type : "n1-standard-2",
+ name : "testqa",
+ project_id : "bluemeric-1308",
+ initialNodeCount : 1,
+ diskSize : 100,
+ zone : "us-east1-b" }]]>
+    </line>
+    <line>
+      <![CDATA[Response Message = {
+ tx_id : "1479119741616272074",
+ success : true }]]>
+    </line>
+    <line>
+      <![CDATA[Response Message = {
+ result : [{
+ id : "5c800192-aa55-11e6-8cd9-42010af00006",
+ kube_url : "https://console.developers.google.com/kubernetes/clusters/details/asia-east1-a/vmtest01?project=bluemeric-1308",
+ account_id : "1460525359818202767",
+ name : "vmtest01",
+ provider_env :{
+ project_id : "bluemeric-1308",
+ zone : "asia-east1-a",
+ network : "default" },
+ state : "",
+ provider : "Google",
+ env : "",
+ type : "kube",
+ ip : "104.199.192.120" }{
+ kube_url : "https://console.developers.google.com/kubernetes/clusters/details/us-east1-b/testqa?project=bluemeric-1308",
+ id : "178d1793-aa56-11e6-8cd9-42010af00006",
+ account_id : "1460525359818202767",
+ name : "testqa",
+ state : "Creating",
+ provider_env :{
+ project_id : "bluemeric-1308",
+ zone : "us-east1-b" },
+ provider : "Google",
+ env : "",
+ type : "kube",
+ ip : "" } ],
+ count : 2,
+ success : true }]]>
+    </line>
+    <line>
+      <![CDATA[Kube Name : testqa]]>
+    </line>
+    <line>
+      <![CDATA[Kube ID   : 9592a85f-aa56-11e6-8cd9-42010af00006]]>
+    </line>
+    <line>
+      <![CDATA[Design Name : sla-design]]>
+    </line>
+    <line>
+      <![CDATA[Design Id   : d_b7907366g48b5g4cefgbdf7g936512b5875d]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"id":"d_b7907366g48b5g4cefgbdf7g936512b5875d","name":"sla-design","components_count":1,"components":[{"name":"www","component_type":"NAN","child":[],"parent":[],"created_time":"2016-11-14 10:39:53.329858486 +0000 UTC","updated_time":"2016-11-14 10:39:53.329875905 +0000 UTC","status":"Success","id":1}],"acc_id":"1460525359818202767","app_tag":[],"created_time":"2016-11-14 10:39:53.32989662 +0000 UTC","updated_time":"2016-11-14 10:39:53.329898444 +0000 UTC","status":"Creating"}]]>
+    </line>
+    <line>
+      <![CDATA[Builder              = Ant]]>
+    </line>
+    <line>
+      <![CDATA[Component Type       = Repository]]>
+    </line>
+    <line>
+      <![CDATA[Component Path       = https://github.com/sailakshmiv/antapp.git]]>
+    </line>
+    <line>
+      <![CDATA[Repository Provider  = github]]>
+    </line>
+    <line>
+      <![CDATA[Platform			   = tomcat:7]]>
+    </line>
+    <line>
+      <![CDATA[Ports				   = 8080]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d/component]]>
+    </line>
+    <line>
+      <![CDATA[Expected Status =  200]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"name":"git","component_type":"Repository","created_time":"2016-11-14 10:40:04.130064481 +0000 UTC","kind":"github","repo":{"repo_path":"https://github.com/sailakshmiv/antapp.git","repo_provider":"github","repo_tag":"master"},"autoscale":{"max_count":"1","min_count":"1","cpu_utilization":"70"},"networks":{"ports":"8080"},"script":{"builder":"Ant","build":"ant"},"updated_time":"2016-11-14 10:40:04.130076448 +0000 UTC","id":2,"child":[],"parent":[],"platform":"tomcat:7","status":"Creating"}]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"success":true,"is_valid":true}]]>
+    </line>
+    <line>
+      <![CDATA[Actual Response body: = {"success":true,"is_valid":true}]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d]]>
+    </line>
+    <line>
+      <![CDATA[Expected Status =  200]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"success":true,"tx_id":"1479120005671774503"}]]>
+    </line>
+    <line>
+      <![CDATA[Actual Response body: = {"tx_id":"JSONSTRING","success":true}]]>
+    </line>
+    <line>
+      <![CDATA[Launched Application ID : sla-app]]>
+    </line>
+    <line>
+      <![CDATA[External Port			  : 30552]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/d_b7907366g48b5g4cefgbdf7g936512b5875d]]>
+    </line>
+    <line>
+      <![CDATA[Expected Status =  200]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"tx_id":"1479120026371652025","success":true}]]>
+    </line>
+    <line>
+      <![CDATA[Application :Success]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Insert title here</title></head><body><a href="HelloWorld">click Here-goPaddle Bluemeric ANTAPP DEMOnewapp</a></body></html>]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/a_d9eb5ea7ged90g4c79g9310gd60cc256936e]]>
+    </line>
+    <line>
+      <![CDATA[a_d9eb5ea7ged90g4c79g9310gd60cc256936e Application Deleted ]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 204]]>
+    </line>
+    <line>
+      <![CDATA[Design Name : slndnew-design]]>
+    </line>
+    <line>
+      <![CDATA[Design Id   : d_cee58ceagac47g4aeaga520g1718c548cb5c]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"acc_id":"1460525359818202767","app_tag":[],"updated_time":"2016-11-14 10:42:44.980352442 +0000 UTC","status":"Creating","components":[{"child":[],"parent":[],"created_time":"2016-11-14 10:42:44.980308929 +0000 UTC","updated_time":"2016-11-14 10:42:44.980330127 +0000 UTC","status":"Success","id":1,"name":"www","component_type":"NAN"}],"id":"d_cee58ceagac47g4aeaga520g1718c548cb5c","name":"slndnew-design","created_time":"2016-11-14 10:42:44.980350729 +0000 UTC","components_count":1}]]>
+    </line>
+    <line>
+      <![CDATA[Builder              = Native]]>
+    </line>
+    <line>
+      <![CDATA[startscript1		   = npm start]]>
+    </line>
+    <line>
+      <![CDATA[postinstall1		   = npm install]]>
+    </line>
+    <line>
+      <![CDATA[Component Type       = Repository]]>
+    </line>
+    <line>
+      <![CDATA[Component Path       = https://github.com/sailakshmiv/Quiz-Application.git]]>
+    </line>
+    <line>
+      <![CDATA[Repository Provider  = github]]>
+    </line>
+    <line>
+      <![CDATA[Platform			   = nodejs:v5.0]]>
+    </line>
+    <line>
+      <![CDATA[Ports				   = 8000]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c/component]]>
+    </line>
+    <line>
+      <![CDATA[Expected Status =  200]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"name":"git","child":[],"kind":"github","autoscale":{"cpu_utilization":"70","max_count":"1","min_count":"1"},"repo":{"repo_provider":"github","repo_tag":"master","repo_path":"https://github.com/sailakshmiv/Quiz-Application.git"},"networks":{"ports":"8000"},"script":{"builder":"Native","start_script":"npm start","post_install":"npm install"},"parent":[],"updated_time":"2016-11-14 10:42:56.593816565 +0000 UTC","status":"Creating","id":2,"component_type":"Repository","platform":"nodejs:v5.0","created_time":"2016-11-14 10:42:56.593805494 +0000 UTC"}]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c/component]]>
+    </line>
+    <line>
+      <![CDATA[Component Type       = Datastore]]>
+    </line>
+    <line>
+      <![CDATA[DataStore		       = mysql]]>
+    </line>
+    <line>
+      <![CDATA[Version			   = 5.6]]>
+    </line>
+    <line>
+      <![CDATA[Path		           = https://storage.googleapis.com/paddle-slkubmcation-donotdelete/dbdata.tgz]]>
+    </line>
+    <line>
+      <![CDATA[Ports					   = 3306]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"parent":[],"Postgresql":"","path":"https://storage.googleapis.com/paddle-slkubmcation-donotdelete/dbdata.tgz","created_time":"2016-11-14 10:42:57.517104373 +0000 UTC","status":"Creating","updated_time":"2016-11-14 10:42:57.51711832 +0000 UTC","id":3,"child":[],"kind":"mysql","is_volume":"true","networks":{"ports":"3306"},"component_type":"Datastore","mysql":"","volume":"/var/lib/mysql","autoscale":{"max_count":"1","min_count":"1","cpu_utilization":"70"},"name":"c-v6upc","data_store":"mysql","version":"5.6","mongodb":"","cassandra":""}]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"success":true,"is_valid":false}]]>
+    </line>
+    <line>
+      <![CDATA[Actual Response body: = {"success":true,"is_valid":true}]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"success":true,"is_valid":true}]]>
+    </line>
+    <line>
+      <![CDATA[Actual Response body: = {"success":true,"is_valid":true}]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c]]>
+    </line>
+    <line>
+      <![CDATA[Expected Status =  200]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"success":true,"tx_id":"1479120179668711846"}]]>
+    </line>
+    <line>
+      <![CDATA[Actual Response body: = {"tx_id":"JSONSTRING","success":true}]]>
+    </line>
+    <line>
+      <![CDATA[Launched Application ID : slndnew-app]]>
+    </line>
+    <line>
+      <![CDATA[External Port			  : 30604]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/d_cee58ceagac47g4aeaga520g1718c548cb5c]]>
+    </line>
+    <line>
+      <![CDATA[Expected Status =  200]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"tx_id":"1479120200368573586","success":true}]]>
+    </line>
+    <line>
+      <![CDATA[Application :Success]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = <!DOCTYPE html>  <html lang="en">    <head>    <meta charset="utf-8">    <title>Login</title>    <meta name="Arjun" content="">    <!-- styles -->    <link href="stylesheets/login_page.css" rel="stylesheet">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    <script src ="javascripts/login.js"></script>   </head>  <body	>    <div class="center-div">    	<form id="login_form" method="post">          Username: <input type="text" name="username"><br>          Password: <input type="password" name="password"><br>          <div class="center-button">  		      <input id="login_submit_button" type="submit" value="Submit">          </div>  	  </form>    </div>      </body></html> ]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[Design Name : slnm14-design]]>
+    </line>
+    <line>
+      <![CDATA[Design Id   : d_2b5c4c6agdd31g4a16gadccg92d67668e28c]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"updated_time":"2016-11-14 10:45:46.239221599 +0000 UTC","name":"slnm14-design","acc_id":"1460525359818202767","app_tag":[],"created_time":"2016-11-14 10:45:46.239219865 +0000 UTC","status":"Creating","components_count":1,"components":[{"parent":[],"created_time":"2016-11-14 10:45:46.239189455 +0000 UTC","updated_time":"2016-11-14 10:45:46.239203402 +0000 UTC","status":"Success","id":1,"name":"www","component_type":"NAN","child":[]}],"id":"d_2b5c4c6agdd31g4a16gadccg92d67668e28c"}]]>
+    </line>
+    <line>
+      <![CDATA[Builder              = Native]]>
+    </line>
+    <line>
+      <![CDATA[startscript1		   = node server.js]]>
+    </line>
+    <line>
+      <![CDATA[postinstall1		   = npm install]]>
+    </line>
+    <line>
+      <![CDATA[Component Type       = Repository]]>
+    </line>
+    <line>
+      <![CDATA[Component Path       = https://github.com/sailakshmiv/real-time-chat.git]]>
+    </line>
+    <line>
+      <![CDATA[Repository Provider  = github]]>
+    </line>
+    <line>
+      <![CDATA[Platform			   = nodejs:v5.0]]>
+    </line>
+    <line>
+      <![CDATA[Ports				   = 9100]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c/component]]>
+    </line>
+    <line>
+      <![CDATA[Expected Status =  200]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"id":2,"component_type":"Repository","networks":{"ports":"9100"},"script":{"builder":"Native","post_install":"npm install","start_script":"node server.js"},"created_time":"2016-11-14 10:45:56.974580582 +0000 UTC","updated_time":"2016-11-14 10:45:56.974592526 +0000 UTC","kind":"github","platform":"nodejs:v5.0","autoscale":{"min_count":"1","cpu_utilization":"70","max_count":"1"},"status":"Creating","name":"git","child":[],"parent":[],"repo":{"repo_path":"https://github.com/sailakshmiv/real-time-chat.git","repo_provider":"github","repo_tag":"master"}}]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c/component]]>
+    </line>
+    <line>
+      <![CDATA[Component Type       = Datastore]]>
+    </line>
+    <line>
+      <![CDATA[DataStore		       = mongodb]]>
+    </line>
+    <line>
+      <![CDATA[Version			   = 3.2]]>
+    </line>
+    <line>
+      <![CDATA[Path		           = ]]>
+    </line>
+    <line>
+      <![CDATA[Ports					   = 27017]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"created_time":"2016-11-14 10:45:57.798048349 +0000 UTC","name":"c-n3eal","kind":"mongodb","data_store":"mongodb","networks":{"ports":"27017"},"parent":[],"version":"3.2","cassandra":"","is_volume":"true","volume":"/var/lib/mongodb","updated_time":"2016-11-14 10:45:57.798061569 +0000 UTC","status":"Creating","mongodb":"","mysql":"","path":"","autoscale":{"cpu_utilization":"70","max_count":"1","min_count":"1"},"id":3,"component_type":"Datastore","child":[],"Postgresql":""}]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"is_valid":false,"success":true}]]>
+    </line>
+    <line>
+      <![CDATA[Actual Response body: = {"success":true,"is_valid":true}]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"success":true,"is_valid":true}]]>
+    </line>
+    <line>
+      <![CDATA[Actual Response body: = {"success":true,"is_valid":true}]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c]]>
+    </line>
+    <line>
+      <![CDATA[Expected Status =  200]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"success":true,"tx_id":"1479120359974984932"}]]>
+    </line>
+    <line>
+      <![CDATA[Actual Response body: = {"tx_id":"JSONSTRING","success":true}]]>
+    </line>
+    <line>
+      <![CDATA[Launched Application ID : slnm14-app]]>
+    </line>
+    <line>
+      <![CDATA[External Port			  : 30629]]>
+    </line>
+    <line>
+      <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/d_2b5c4c6agdd31g4a16gadccg92d67668e28c]]>
+    </line>
+    <line>
+      <![CDATA[Expected Status =  200]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+    <line>
+      <![CDATA[get Response body: = {"tx_id":"1479120380668549576","success":true}]]>
+    </line>
+    <line>
+      <![CDATA[Application :Success]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = <!doctype html><html lang="en"><head>    <meta charset="UTF-8">    <title>Real-Time Chat</title>    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css">    <link rel="stylesheet" href="css/styles.css"></head><body>    <div class="vertical-center">        <div class="container">            <div class="row">                <div class="col-md-4 col-md-offset-4">                    <h1 class="text-center">Join Chat</h1>                    <form action="/chat.html">                        <div class="form-group">                            <label for="name">Display Name:</label>                            <div class="input-group">                            <span class="input-group-addon">                                <i class="glyphicon glyphicon-user"></i>                            </span>                                <input type="text" id="name" name="name" class="form-control">                            </div>                        </div>                        <div class="form-group">                            <label for="room">Room Name:</label>                            <div class="input-group">                            <span class="input-group-addon">                                <i class="glyphicon glyphicon-comment"></i>                            </span>                                <input type="text" id="room" name="room" class="form-control">                            </div>                        </div>                        <div class="form-group">                            <input type="submit" class="btn btn-primary btn-block" value="Join Chat">                        </div>                    </form>                </div>            </div>        </div>    </div></body></html>]]>
+    </line>
+    <line>
+      <![CDATA[Response Status = 200]]>
+    </line>
+  </reporter-output>
+  <suite name="Singletier - Authorization" duration-ms="1811" started-at="2016-11-14T10:35:38Z" finished-at="2016-11-14T10:35:40Z">
+    <groups>
+    </groups>
+    <test name="connection" duration-ms="1811" started-at="2016-11-14T10:35:38Z" finished-at="2016-11-14T10:35:40Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@15e8baa]" name="createreport" is-config="true" duration-ms="105" started-at="2016-11-14T16:05:38Z" finished-at="2016-11-14T16:05:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3fe8cc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Authorization]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="connection()[pri:0, instance:com.gopaddle.utils.Singletier@15e8baa]" name="connection" duration-ms="1109" started-at="2016-11-14T16:05:38Z" finished-at="2016-11-14T16:05:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[get Response body: = {"account_id":"1460525359818202767","handle":"demogopaddle","success":true,"token":"eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0NzkzNzg5NDAsImhhbmRsZSI6ImRlbW9nb3BhZGRsZSIsImlhdCI6MTQ3OTExOTc0MCwic3ViIjoiMTQ2MDUyNTM1OTgxODIwMjc2NyJ9.uorHoapEqmNrBnBB_eDVNpyfueGKz76knL4ph9eqMlLpwwb7pe4lPWd7ucp96LmfxdJI1ZTANzj-41l00Uz-IjroU_pbcArPsBnfgJ_222vpxfTw4dF7mIRbit3X1wKGwz_nIXDT6D7c9CM15fajhjC3VwCmE1cuPj72hCHKhvj6m7ceInxKPxg5j4MnVTNHrkxgiGK8-7gSZupgu_G8e-E7vlCQ-k7v33pLD78eaUa-PUJt7yOvCNfKfCHi-g2PXUa2R6zWButK5Hz4tfcq4uG3t7VRAfN6dOfiUO4LbFTuC9DzDn_Qsg_u6RuArMzHsRKoUf1Y0smAOhQh7uieXQ"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- connection -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@15e8baa]" name="screenshot" is-config="true" duration-ms="579" started-at="2016-11-14T16:05:39Z" finished-at="2016-11-14T16:05:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=connection status=SUCCESS method=Singletier.connection()[pri:0, instance:com.gopaddle.utils.Singletier@15e8baa] output=get Response body: = {"account_id":"1460525359818202767","handle":"demogopaddle","success":true,"token":"eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0NzkzNzg5NDAsImhhbmRsZSI6ImRlbW9nb3BhZGRsZSIsImlhdCI6MTQ3OTExOTc0MCwic3ViIjoiMTQ2MDUyNTM1OTgxODIwMjc2NyJ9.uorHoapEqmNrBnBB_eDVNpyfueGKz76knL4ph9eqMlLpwwb7pe4lPWd7ucp96LmfxdJI1ZTANzj-41l00Uz-IjroU_pbcArPsBnfgJ_222vpxfTw4dF7mIRbit3X1wKGwz_nIXDT6D7c9CM15fajhjC3VwCmE1cuPj72hCHKhvj6m7ceInxKPxg5j4MnVTNHrkxgiGK8-7gSZupgu_G8e-E7vlCQ-k7v33pLD78eaUa-PUJt7yOvCNfKfCHi-g2PXUa2R6zWButK5Hz4tfcq4uG3t7VRAfN6dOfiUO4LbFTuC9DzDn_Qsg_u6RuArMzHsRKoUf1Y0smAOhQh7uieXQ"}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Authorization]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- connection -->
+  </suite> <!-- Singletier - Authorization -->
+  <suite name="Singletier - CreateKub" duration-ms="250766" started-at="2016-11-14T10:35:41Z" finished-at="2016-11-14T10:39:51Z">
+    <groups>
+    </groups>
+    <test name="listKubes" duration-ms="218778" started-at="2016-11-14T10:35:41Z" finished-at="2016-11-14T10:39:19Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@5015be]" name="createreport" is-config="true" duration-ms="1" started-at="2016-11-14T16:05:41Z" finished-at="2016-11-14T16:05:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@10fbc83]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CreateKub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="listKubes(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@5015be]" name="listKubes" duration-ms="218713" started-at="2016-11-14T16:05:41Z" finished-at="2016-11-14T16:09:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testqa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Response Message = {
+ result : [{
+ id : "5c800192-aa55-11e6-8cd9-42010af00006",
+ kube_url : "https://console.developers.google.com/kubernetes/clusters/details/asia-east1-a/vmtest01?project=bluemeric-1308",
+ account_id : "1460525359818202767",
+ name : "vmtest01",
+ provider_env :{
+ project_id : "bluemeric-1308",
+ zone : "asia-east1-a",
+ network : "default" },
+ state : "",
+ provider : "Google",
+ env : "",
+ type : "kube",
+ ip : "104.199.192.120" }{
+ kube_url : "https://console.developers.google.com/kubernetes/clusters/details/us-east1-b/testqa?project=bluemeric-1308",
+ id : "178d1793-aa56-11e6-8cd9-42010af00006",
+ account_id : "1460525359818202767",
+ name : "testqa",
+ state : "Creating",
+ provider_env :{
+ project_id : "bluemeric-1308",
+ zone : "us-east1-b" },
+ provider : "Google",
+ env : "",
+ type : "kube",
+ ip : "" } ],
+ count : 2,
+ success : true }]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- listKubes -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@5015be]" name="screenshot" is-config="true" duration-ms="63" started-at="2016-11-14T16:09:19Z" finished-at="2016-11-14T16:09:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=listKubes status=SUCCESS method=Singletier.listKubes(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@5015be] output=Response Message = {
+ result : [{
+ id : "5c800192-aa55-11e6-8cd9-42010af00006",
+ kube_url : "https://console.developers.google.com/kubernetes/clusters/details/asia-east1-a/vmtest01?project=bluemeric-1308",
+ account_id : "1460525359818202767",
+ name : "vmtest01",
+ provider_env :{
+ project_id : "bluemeric-1308",
+ zone : "asia-east1-a",
+ network : "default" },
+ state : "",
+ provider : "Google",
+ env : "",
+ type : "kube",
+ ip : "104.199.192.120" }{
+ kube_url : "https://console.developers.google.com/kubernetes/clusters/details/us-east1-b/testqa?project=bluemeric-1308",
+ id : "178d1793-aa56-11e6-8cd9-42010af00006",
+ account_id : "1460525359818202767",
+ name : "testqa",
+ state : "Creating",
+ provider_env :{
+ project_id : "bluemeric-1308",
+ zone : "us-east1-b" },
+ provider : "Google",
+ env : "",
+ type : "kube",
+ ip : "" } ],
+ count : 2,
+ success : true }]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CreateKub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- listKubes -->
+    <test name="getkubId" duration-ms="31984" started-at="2016-11-14T10:39:19Z" finished-at="2016-11-14T10:39:51Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@858024]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:09:19Z" finished-at="2016-11-14T16:09:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2161ee]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CreateKub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="getkubId(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@858024]" name="getkubId" duration-ms="31945" started-at="2016-11-14T16:09:19Z" finished-at="2016-11-14T16:09:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testqa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Kube Name : testqa]]>
+            </line>
+            <line>
+              <![CDATA[Kube ID   : 9592a85f-aa56-11e6-8cd9-42010af00006]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getkubId -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@858024]" name="screenshot" is-config="true" duration-ms="37" started-at="2016-11-14T16:09:51Z" finished-at="2016-11-14T16:09:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getkubId status=SUCCESS method=Singletier.getkubId(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@858024] output=Kube Name : testqa]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CreateKub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- getkubId -->
+  </suite> <!-- Singletier - CreateKub -->
+  <suite name="Singletier - createKubes" duration-ms="921" started-at="2016-11-14T10:35:40Z" finished-at="2016-11-14T10:35:41Z">
+    <groups>
+    </groups>
+    <test name="createKubes" duration-ms="921" started-at="2016-11-14T10:35:40Z" finished-at="2016-11-14T10:35:41Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createKubes(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1994081]" name="createKubes" duration-ms="800" started-at="2016-11-14T16:05:40Z" finished-at="2016-11-14T16:05:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testqa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[Request Body = {
+ machine_type : "n1-standard-2",
+ name : "testqa",
+ project_id : "bluemeric-1308",
+ initialNodeCount : 1,
+ diskSize : 100,
+ zone : "us-east1-b" }]]>
+            </line>
+            <line>
+              <![CDATA[Response Message = {
+ tx_id : "1479119741616272074",
+ success : true }]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createKubes -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1994081]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:05:40Z" finished-at="2016-11-14T16:05:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a464d7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[createKubes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1994081]" name="screenshot" is-config="true" duration-ms="120" started-at="2016-11-14T16:05:40Z" finished-at="2016-11-14T16:05:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createKubes status=SUCCESS method=Singletier.createKubes(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1994081] output=Response Status = 200]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[createKubes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- createKubes -->
+  </suite> <!-- Singletier - createKubes -->
+  <suite name="Multitier - NodeMongo7-Git-MavenBuilder" duration-ms="164935" started-at="2016-11-14T10:45:44Z" finished-at="2016-11-14T10:48:29Z">
+    <groups>
+    </groups>
+    <test name="createDesign" duration-ms="704" started-at="2016-11-14T10:45:44Z" finished-at="2016-11-14T10:45:45Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@15ccc72]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:15:44Z" finished-at="2016-11-14T16:15:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1d87396]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="createDesign(java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@15ccc72]" name="createDesign" duration-ms="652" started-at="2016-11-14T16:15:44Z" finished-at="2016-11-14T16:15:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[slnm14-design]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Design Name : slnm14-design]]>
+            </line>
+            <line>
+              <![CDATA[Design Id   : d_2b5c4c6agdd31g4a16gadccg92d67668e28c]]>
+            </line>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"updated_time":"2016-11-14 10:45:46.239221599 +0000 UTC","name":"slnm14-design","acc_id":"1460525359818202767","app_tag":[],"created_time":"2016-11-14 10:45:46.239219865 +0000 UTC","status":"Creating","components_count":1,"components":[{"parent":[],"created_time":"2016-11-14 10:45:46.239189455 +0000 UTC","updated_time":"2016-11-14 10:45:46.239203402 +0000 UTC","status":"Success","id":1,"name":"www","component_type":"NAN","child":[]}],"id":"d_2b5c4c6agdd31g4a16gadccg92d67668e28c"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createDesign -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@15ccc72]" name="screenshot" is-config="true" duration-ms="50" started-at="2016-11-14T16:15:45Z" finished-at="2016-11-14T16:15:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createDesign status=SUCCESS method=Multitier.createDesign(java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@15ccc72] output=Design Name : slnm14-design]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- createDesign -->
+    <test name="CreateComponent" duration-ms="10808" started-at="2016-11-14T10:45:45Z" finished-at="2016-11-14T10:45:56Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="CreateComponent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@18538c1]" name="CreateComponent" duration-ms="10759" started-at="2016-11-14T16:15:45Z" finished-at="2016-11-14T16:15:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[slnm14-design]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://github.com/sailakshmiv/real-time-chat.git]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[github]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Native]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[nodejs:v5.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9100]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[npm install]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[node server.js]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Builder              = Native]]>
+            </line>
+            <line>
+              <![CDATA[startscript1		   = node server.js]]>
+            </line>
+            <line>
+              <![CDATA[postinstall1		   = npm install]]>
+            </line>
+            <line>
+              <![CDATA[Component Type       = Repository]]>
+            </line>
+            <line>
+              <![CDATA[Component Path       = https://github.com/sailakshmiv/real-time-chat.git]]>
+            </line>
+            <line>
+              <![CDATA[Repository Provider  = github]]>
+            </line>
+            <line>
+              <![CDATA[Platform			   = nodejs:v5.0]]>
+            </line>
+            <line>
+              <![CDATA[Ports				   = 9100]]>
+            </line>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c/component]]>
+            </line>
+            <line>
+              <![CDATA[Expected Status =  200]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"id":2,"component_type":"Repository","networks":{"ports":"9100"},"script":{"builder":"Native","post_install":"npm install","start_script":"node server.js"},"created_time":"2016-11-14 10:45:56.974580582 +0000 UTC","updated_time":"2016-11-14 10:45:56.974592526 +0000 UTC","kind":"github","platform":"nodejs:v5.0","autoscale":{"min_count":"1","cpu_utilization":"70","max_count":"1"},"status":"Creating","name":"git","child":[],"parent":[],"repo":{"repo_path":"https://github.com/sailakshmiv/real-time-chat.git","repo_provider":"github","repo_tag":"master"}}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateComponent -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@18538c1]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:15:45Z" finished-at="2016-11-14T16:15:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@18c8a1b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@18538c1]" name="screenshot" is-config="true" duration-ms="47" started-at="2016-11-14T16:15:56Z" finished-at="2016-11-14T16:15:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CreateComponent status=SUCCESS method=Multitier.CreateComponent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@18538c1] output=Builder              = Native]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- CreateComponent -->
+    <test name="createTwotierComponent" duration-ms="724" started-at="2016-11-14T10:45:56Z" finished-at="2016-11-14T10:45:57Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="createTwotierComponent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@107c51a]" name="createTwotierComponent" duration-ms="686" started-at="2016-11-14T16:15:56Z" finished-at="2016-11-14T16:15:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mongodb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[27017]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[/var/lib/mongodb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c/component]]>
+            </line>
+            <line>
+              <![CDATA[Component Type       = Datastore]]>
+            </line>
+            <line>
+              <![CDATA[DataStore		       = mongodb]]>
+            </line>
+            <line>
+              <![CDATA[Version			   = 3.2]]>
+            </line>
+            <line>
+              <![CDATA[Path		           = ]]>
+            </line>
+            <line>
+              <![CDATA[Ports					   = 27017]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"created_time":"2016-11-14 10:45:57.798048349 +0000 UTC","name":"c-n3eal","kind":"mongodb","data_store":"mongodb","networks":{"ports":"27017"},"parent":[],"version":"3.2","cassandra":"","is_volume":"true","volume":"/var/lib/mongodb","updated_time":"2016-11-14 10:45:57.798061569 +0000 UTC","status":"Creating","mongodb":"","mysql":"","path":"","autoscale":{"cpu_utilization":"70","max_count":"1","min_count":"1"},"id":3,"component_type":"Datastore","child":[],"Postgresql":""}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createTwotierComponent -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@107c51a]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:15:56Z" finished-at="2016-11-14T16:15:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1bf1c70]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@107c51a]" name="screenshot" is-config="true" duration-ms="36" started-at="2016-11-14T16:15:57Z" finished-at="2016-11-14T16:15:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createTwotierComponent status=SUCCESS method=Multitier.createTwotierComponent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@107c51a] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c/component]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- createTwotierComponent -->
+    <test name="linkComponent" duration-ms="699" started-at="2016-11-14T10:45:57Z" finished-at="2016-11-14T10:45:57Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@35210f]" name="createreport" is-config="true" duration-ms="1" started-at="2016-11-14T16:15:57Z" finished-at="2016-11-14T16:15:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1e42f32]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="linkComponent(java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@35210f]" name="linkComponent" duration-ms="666" started-at="2016-11-14T16:15:57Z" finished-at="2016-11-14T16:15:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"is_valid":false,"success":true}]]>
+            </line>
+            <line>
+              <![CDATA[Actual Response body: = {"success":true,"is_valid":true}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- linkComponent -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@35210f]" name="screenshot" is-config="true" duration-ms="30" started-at="2016-11-14T16:15:57Z" finished-at="2016-11-14T16:15:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=linkComponent status=SUCCESS method=Multitier.linkComponent(java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@35210f] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- linkComponent -->
+    <test name="MultiLinkComponent" duration-ms="693" started-at="2016-11-14T10:45:57Z" finished-at="2016-11-14T10:45:58Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="MultiLinkComponent(java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@1cea978]" name="MultiLinkComponent" duration-ms="660" started-at="2016-11-14T16:15:57Z" finished-at="2016-11-14T16:15:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"success":true,"is_valid":true}]]>
+            </line>
+            <line>
+              <![CDATA[Actual Response body: = {"success":true,"is_valid":true}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MultiLinkComponent -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@1cea978]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:15:57Z" finished-at="2016-11-14T16:15:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1d6a184]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@1cea978]" name="screenshot" is-config="true" duration-ms="32" started-at="2016-11-14T16:15:58Z" finished-at="2016-11-14T16:15:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MultiLinkComponent status=SUCCESS method=Multitier.MultiLinkComponent(java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@1cea978] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- MultiLinkComponent -->
+    <test name="publishDesign" duration-ms="685" started-at="2016-11-14T10:45:58Z" finished-at="2016-11-14T10:45:59Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@a6195e]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:15:58Z" finished-at="2016-11-14T16:15:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f37d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="publishDesign()[pri:0, instance:com.gopaddle.utils.Multitier@a6195e]" name="publishDesign" duration-ms="635" started-at="2016-11-14T16:15:58Z" finished-at="2016-11-14T16:15:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c]]>
+            </line>
+            <line>
+              <![CDATA[Expected Status =  200]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"success":true,"tx_id":"1479120359974984932"}]]>
+            </line>
+            <line>
+              <![CDATA[Actual Response body: = {"tx_id":"JSONSTRING","success":true}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- publishDesign -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@a6195e]" name="screenshot" is-config="true" duration-ms="48" started-at="2016-11-14T16:15:59Z" finished-at="2016-11-14T16:15:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=publishDesign status=SUCCESS method=Multitier.publishDesign()[pri:0, instance:com.gopaddle.utils.Multitier@a6195e] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_2b5c4c6agdd31g4a16gadccg92d67668e28c]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- publishDesign -->
+    <test name="launchApp" duration-ms="20749" started-at="2016-11-14T10:45:59Z" finished-at="2016-11-14T10:46:19Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@1fca8fd]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:15:59Z" finished-at="2016-11-14T16:15:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@b4c4cb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="launchApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@1fca8fd]" name="launchApp" duration-ms="20718" started-at="2016-11-14T16:15:59Z" finished-at="2016-11-14T16:16:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[slnm14-app]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[30629]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Launched Application ID : slnm14-app]]>
+            </line>
+            <line>
+              <![CDATA[External Port			  : 30629]]>
+            </line>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/d_2b5c4c6agdd31g4a16gadccg92d67668e28c]]>
+            </line>
+            <line>
+              <![CDATA[Expected Status =  200]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"tx_id":"1479120380668549576","success":true}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@1fca8fd]" name="screenshot" is-config="true" duration-ms="30" started-at="2016-11-14T16:16:19Z" finished-at="2016-11-14T16:16:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=launchApp status=SUCCESS method=Multitier.launchApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@1fca8fd] output=Launched Application ID : slnm14-app]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- launchApp -->
+    <test name="accessValidation" duration-ms="129745" started-at="2016-11-14T10:46:19Z" finished-at="2016-11-14T10:48:29Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="accessValidation(java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@299b2d]" name="accessValidation" duration-ms="129700" started-at="2016-11-14T16:16:19Z" finished-at="2016-11-14T16:18:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Application :Success]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = <!doctype html><html lang="en"><head>    <meta charset="UTF-8">    <title>Real-Time Chat</title>    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css">    <link rel="stylesheet" href="css/styles.css"></head><body>    <div class="vertical-center">        <div class="container">            <div class="row">                <div class="col-md-4 col-md-offset-4">                    <h1 class="text-center">Join Chat</h1>                    <form action="/chat.html">                        <div class="form-group">                            <label for="name">Display Name:</label>                            <div class="input-group">                            <span class="input-group-addon">                                <i class="glyphicon glyphicon-user"></i>                            </span>                                <input type="text" id="name" name="name" class="form-control">                            </div>                        </div>                        <div class="form-group">                            <label for="room">Room Name:</label>                            <div class="input-group">                            <span class="input-group-addon">                                <i class="glyphicon glyphicon-comment"></i>                            </span>                                <input type="text" id="room" name="room" class="form-control">                            </div>                        </div>                        <div class="form-group">                            <input type="submit" class="btn btn-primary btn-block" value="Join Chat">                        </div>                    </form>                </div>            </div>        </div>    </div></body></html>]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- accessValidation -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@299b2d]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:16:19Z" finished-at="2016-11-14T16:16:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1e3ff47]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@299b2d]" name="screenshot" is-config="true" duration-ms="43" started-at="2016-11-14T16:18:29Z" finished-at="2016-11-14T16:18:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=accessValidation status=SUCCESS method=Multitier.accessValidation(java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@299b2d] output=Application :Success]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMongo7-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- accessValidation -->
+  </suite> <!-- Multitier - NodeMongo7-Git-MavenBuilder -->
+  <suite name="Multitier - NodeMySQL-Git-MavenBuilder" duration-ms="181233" started-at="2016-11-14T10:42:43Z" finished-at="2016-11-14T10:45:44Z">
+    <groups>
+    </groups>
+    <test name="createDesign" duration-ms="1619" started-at="2016-11-14T10:42:43Z" finished-at="2016-11-14T10:42:45Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="createDesign(java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@1ebe901]" name="createDesign" duration-ms="664" started-at="2016-11-14T16:12:43Z" finished-at="2016-11-14T16:12:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[slndnew-design]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Design Name : slndnew-design]]>
+            </line>
+            <line>
+              <![CDATA[Design Id   : d_cee58ceagac47g4aeaga520g1718c548cb5c]]>
+            </line>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"acc_id":"1460525359818202767","app_tag":[],"updated_time":"2016-11-14 10:42:44.980352442 +0000 UTC","status":"Creating","components":[{"child":[],"parent":[],"created_time":"2016-11-14 10:42:44.980308929 +0000 UTC","updated_time":"2016-11-14 10:42:44.980330127 +0000 UTC","status":"Success","id":1,"name":"www","component_type":"NAN"}],"id":"d_cee58ceagac47g4aeaga520g1718c548cb5c","name":"slndnew-design","created_time":"2016-11-14 10:42:44.980350729 +0000 UTC","components_count":1}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createDesign -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@1ebe901]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:12:43Z" finished-at="2016-11-14T16:12:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@18ca1c0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@1ebe901]" name="screenshot" is-config="true" duration-ms="955" started-at="2016-11-14T16:12:44Z" finished-at="2016-11-14T16:12:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createDesign status=SUCCESS method=Multitier.createDesign(java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@1ebe901] output=Design Name : slndnew-design]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- createDesign -->
+    <test name="CreateComponent" duration-ms="10798" started-at="2016-11-14T10:42:45Z" finished-at="2016-11-14T10:42:55Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@12c510f]" name="createreport" is-config="true" duration-ms="1" started-at="2016-11-14T16:12:45Z" finished-at="2016-11-14T16:12:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1cf5261]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="CreateComponent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@12c510f]" name="CreateComponent" duration-ms="10745" started-at="2016-11-14T16:12:45Z" finished-at="2016-11-14T16:12:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[slndnew-design]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://github.com/sailakshmiv/Quiz-Application.git]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[github]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Native]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[nodejs:v5.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[8000]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[npm install]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[npm start]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Builder              = Native]]>
+            </line>
+            <line>
+              <![CDATA[startscript1		   = npm start]]>
+            </line>
+            <line>
+              <![CDATA[postinstall1		   = npm install]]>
+            </line>
+            <line>
+              <![CDATA[Component Type       = Repository]]>
+            </line>
+            <line>
+              <![CDATA[Component Path       = https://github.com/sailakshmiv/Quiz-Application.git]]>
+            </line>
+            <line>
+              <![CDATA[Repository Provider  = github]]>
+            </line>
+            <line>
+              <![CDATA[Platform			   = nodejs:v5.0]]>
+            </line>
+            <line>
+              <![CDATA[Ports				   = 8000]]>
+            </line>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c/component]]>
+            </line>
+            <line>
+              <![CDATA[Expected Status =  200]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"name":"git","child":[],"kind":"github","autoscale":{"cpu_utilization":"70","max_count":"1","min_count":"1"},"repo":{"repo_provider":"github","repo_tag":"master","repo_path":"https://github.com/sailakshmiv/Quiz-Application.git"},"networks":{"ports":"8000"},"script":{"builder":"Native","start_script":"npm start","post_install":"npm install"},"parent":[],"updated_time":"2016-11-14 10:42:56.593816565 +0000 UTC","status":"Creating","id":2,"component_type":"Repository","platform":"nodejs:v5.0","created_time":"2016-11-14 10:42:56.593805494 +0000 UTC"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateComponent -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@12c510f]" name="screenshot" is-config="true" duration-ms="48" started-at="2016-11-14T16:12:55Z" finished-at="2016-11-14T16:12:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CreateComponent status=SUCCESS method=Multitier.CreateComponent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@12c510f] output=Builder              = Native]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- CreateComponent -->
+    <test name="createTwotierComponent" duration-ms="794" started-at="2016-11-14T10:42:55Z" finished-at="2016-11-14T10:42:56Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="createTwotierComponent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@137f662]" name="createTwotierComponent" duration-ms="750" started-at="2016-11-14T16:12:55Z" finished-at="2016-11-14T16:12:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mysql]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://storage.googleapis.com/paddle-slkubmcation-donotdelete/dbdata.tgz]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5.6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3306]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[/var/lib/mysql]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c/component]]>
+            </line>
+            <line>
+              <![CDATA[Component Type       = Datastore]]>
+            </line>
+            <line>
+              <![CDATA[DataStore		       = mysql]]>
+            </line>
+            <line>
+              <![CDATA[Version			   = 5.6]]>
+            </line>
+            <line>
+              <![CDATA[Path		           = https://storage.googleapis.com/paddle-slkubmcation-donotdelete/dbdata.tgz]]>
+            </line>
+            <line>
+              <![CDATA[Ports					   = 3306]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"parent":[],"Postgresql":"","path":"https://storage.googleapis.com/paddle-slkubmcation-donotdelete/dbdata.tgz","created_time":"2016-11-14 10:42:57.517104373 +0000 UTC","status":"Creating","updated_time":"2016-11-14 10:42:57.51711832 +0000 UTC","id":3,"child":[],"kind":"mysql","is_volume":"true","networks":{"ports":"3306"},"component_type":"Datastore","mysql":"","volume":"/var/lib/mysql","autoscale":{"max_count":"1","min_count":"1","cpu_utilization":"70"},"name":"c-v6upc","data_store":"mysql","version":"5.6","mongodb":"","cassandra":""}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createTwotierComponent -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@137f662]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:12:55Z" finished-at="2016-11-14T16:12:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2975c6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@137f662]" name="screenshot" is-config="true" duration-ms="42" started-at="2016-11-14T16:12:56Z" finished-at="2016-11-14T16:12:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createTwotierComponent status=SUCCESS method=Multitier.createTwotierComponent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@137f662] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c/component]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- createTwotierComponent -->
+    <test name="linkComponent" duration-ms="701" started-at="2016-11-14T10:42:56Z" finished-at="2016-11-14T10:42:57Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@13fed2a]" name="createreport" is-config="true" duration-ms="1" started-at="2016-11-14T16:12:56Z" finished-at="2016-11-14T16:12:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1f31d53]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="linkComponent(java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@13fed2a]" name="linkComponent" duration-ms="645" started-at="2016-11-14T16:12:56Z" finished-at="2016-11-14T16:12:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"success":true,"is_valid":false}]]>
+            </line>
+            <line>
+              <![CDATA[Actual Response body: = {"success":true,"is_valid":true}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- linkComponent -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@13fed2a]" name="screenshot" is-config="true" duration-ms="55" started-at="2016-11-14T16:12:57Z" finished-at="2016-11-14T16:12:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=linkComponent status=SUCCESS method=Multitier.linkComponent(java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@13fed2a] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- linkComponent -->
+    <test name="MultiLinkComponent" duration-ms="715" started-at="2016-11-14T10:42:57Z" finished-at="2016-11-14T10:42:58Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@ee8a8a]" name="createreport" is-config="true" duration-ms="1" started-at="2016-11-14T16:12:57Z" finished-at="2016-11-14T16:12:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@a3a46]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="MultiLinkComponent(java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@ee8a8a]" name="MultiLinkComponent" duration-ms="659" started-at="2016-11-14T16:12:57Z" finished-at="2016-11-14T16:12:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"success":true,"is_valid":true}]]>
+            </line>
+            <line>
+              <![CDATA[Actual Response body: = {"success":true,"is_valid":true}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MultiLinkComponent -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@ee8a8a]" name="screenshot" is-config="true" duration-ms="55" started-at="2016-11-14T16:12:58Z" finished-at="2016-11-14T16:12:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MultiLinkComponent status=SUCCESS method=Multitier.MultiLinkComponent(java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@ee8a8a] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- MultiLinkComponent -->
+    <test name="publishDesign" duration-ms="667" started-at="2016-11-14T10:42:58Z" finished-at="2016-11-14T10:42:58Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="publishDesign()[pri:0, instance:com.gopaddle.utils.Multitier@1803d7]" name="publishDesign" duration-ms="633" started-at="2016-11-14T16:12:58Z" finished-at="2016-11-14T16:12:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c]]>
+            </line>
+            <line>
+              <![CDATA[Expected Status =  200]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"success":true,"tx_id":"1479120179668711846"}]]>
+            </line>
+            <line>
+              <![CDATA[Actual Response body: = {"tx_id":"JSONSTRING","success":true}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- publishDesign -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@1803d7]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:12:58Z" finished-at="2016-11-14T16:12:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@177ccc3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@1803d7]" name="screenshot" is-config="true" duration-ms="34" started-at="2016-11-14T16:12:58Z" finished-at="2016-11-14T16:12:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=publishDesign status=SUCCESS method=Multitier.publishDesign()[pri:0, instance:com.gopaddle.utils.Multitier@1803d7] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_cee58ceagac47g4aeaga520g1718c548cb5c]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- publishDesign -->
+    <test name="launchApp" duration-ms="20734" started-at="2016-11-14T10:42:58Z" finished-at="2016-11-14T10:43:19Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@bd20b1]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:12:58Z" finished-at="2016-11-14T16:12:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@241b10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="launchApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@bd20b1]" name="launchApp" duration-ms="20703" started-at="2016-11-14T16:12:58Z" finished-at="2016-11-14T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[slndnew-app]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[30604]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Launched Application ID : slndnew-app]]>
+            </line>
+            <line>
+              <![CDATA[External Port			  : 30604]]>
+            </line>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/d_cee58ceagac47g4aeaga520g1718c548cb5c]]>
+            </line>
+            <line>
+              <![CDATA[Expected Status =  200]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"tx_id":"1479120200368573586","success":true}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@bd20b1]" name="screenshot" is-config="true" duration-ms="30" started-at="2016-11-14T16:13:19Z" finished-at="2016-11-14T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=launchApp status=SUCCESS method=Multitier.launchApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@bd20b1] output=Launched Application ID : slndnew-app]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- launchApp -->
+    <test name="accessValidation" duration-ms="145096" started-at="2016-11-14T10:43:19Z" finished-at="2016-11-14T10:45:44Z">
+      <class name="com.gopaddle.utils.Multitier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@54b3df]" name="createreport" is-config="true" duration-ms="1" started-at="2016-11-14T16:13:19Z" finished-at="2016-11-14T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6cc3d1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="accessValidation(java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@54b3df]" name="accessValidation" duration-ms="145050" started-at="2016-11-14T16:13:19Z" finished-at="2016-11-14T16:15:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Application :Success]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = <!DOCTYPE html>  <html lang="en">    <head>    <meta charset="utf-8">    <title>Login</title>    <meta name="Arjun" content="">    <!-- styles -->    <link href="stylesheets/login_page.css" rel="stylesheet">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    <script src ="javascripts/login.js"></script>   </head>  <body	>    <div class="center-div">    	<form id="login_form" method="post">          Username: <input type="text" name="username"><br>          Password: <input type="password" name="password"><br>          <div class="center-button">  		      <input id="login_submit_button" type="submit" value="Submit">          </div>  	  </form>    </div>      </body></html> ]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- accessValidation -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@54b3df]" name="screenshot" is-config="true" duration-ms="45" started-at="2016-11-14T16:15:44Z" finished-at="2016-11-14T16:15:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=accessValidation status=SUCCESS method=Multitier.accessValidation(java.lang.String)[pri:0, instance:com.gopaddle.utils.Multitier@54b3df] output=Application :Success]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NodeMySQL-Git-MavenBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Multitier -->
+    </test> <!-- accessValidation -->
+  </suite> <!-- Multitier - NodeMySQL-Git-MavenBuilder -->
+  <suite name="Singletier - Ant-Git-AntBuilder" duration-ms="171699" started-at="2016-11-14T10:39:51Z" finished-at="2016-11-14T10:42:43Z">
+    <groups>
+    </groups>
+    <test name="createDesign" duration-ms="773" started-at="2016-11-14T10:39:51Z" finished-at="2016-11-14T10:39:52Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createDesign(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@900556]" name="createDesign" duration-ms="722" started-at="2016-11-14T16:09:51Z" finished-at="2016-11-14T16:09:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sla-design]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Design Name : sla-design]]>
+            </line>
+            <line>
+              <![CDATA[Design Id   : d_b7907366g48b5g4cefgbdf7g936512b5875d]]>
+            </line>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"id":"d_b7907366g48b5g4cefgbdf7g936512b5875d","name":"sla-design","components_count":1,"components":[{"name":"www","component_type":"NAN","child":[],"parent":[],"created_time":"2016-11-14 10:39:53.329858486 +0000 UTC","updated_time":"2016-11-14 10:39:53.329875905 +0000 UTC","status":"Success","id":1}],"acc_id":"1460525359818202767","app_tag":[],"created_time":"2016-11-14 10:39:53.32989662 +0000 UTC","updated_time":"2016-11-14 10:39:53.329898444 +0000 UTC","status":"Creating"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createDesign -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@900556]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:09:51Z" finished-at="2016-11-14T16:09:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@ac04ed]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@900556]" name="screenshot" is-config="true" duration-ms="50" started-at="2016-11-14T16:09:52Z" finished-at="2016-11-14T16:09:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createDesign status=SUCCESS method=Singletier.createDesign(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@900556] output=Design Name : sla-design]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- createDesign -->
+    <test name="CreateComponent" duration-ms="10878" started-at="2016-11-14T10:39:52Z" finished-at="2016-11-14T10:40:03Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="CreateComponent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@921b6a]" name="CreateComponent" duration-ms="10834" started-at="2016-11-14T16:09:52Z" finished-at="2016-11-14T16:10:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sla-design]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://github.com/sailakshmiv/antapp.git]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[github]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ant]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Ant]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[tomcat:7]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[8080]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Builder              = Ant]]>
+            </line>
+            <line>
+              <![CDATA[Component Type       = Repository]]>
+            </line>
+            <line>
+              <![CDATA[Component Path       = https://github.com/sailakshmiv/antapp.git]]>
+            </line>
+            <line>
+              <![CDATA[Repository Provider  = github]]>
+            </line>
+            <line>
+              <![CDATA[Platform			   = tomcat:7]]>
+            </line>
+            <line>
+              <![CDATA[Ports				   = 8080]]>
+            </line>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d/component]]>
+            </line>
+            <line>
+              <![CDATA[Expected Status =  200]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"name":"git","component_type":"Repository","created_time":"2016-11-14 10:40:04.130064481 +0000 UTC","kind":"github","repo":{"repo_path":"https://github.com/sailakshmiv/antapp.git","repo_provider":"github","repo_tag":"master"},"autoscale":{"max_count":"1","min_count":"1","cpu_utilization":"70"},"networks":{"ports":"8080"},"script":{"builder":"Ant","build":"ant"},"updated_time":"2016-11-14 10:40:04.130076448 +0000 UTC","id":2,"child":[],"parent":[],"platform":"tomcat:7","status":"Creating"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateComponent -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@921b6a]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:09:52Z" finished-at="2016-11-14T16:09:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@9abcef]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@921b6a]" name="screenshot" is-config="true" duration-ms="41" started-at="2016-11-14T16:10:03Z" finished-at="2016-11-14T16:10:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CreateComponent status=SUCCESS method=Singletier.CreateComponent(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@921b6a] output=Builder              = Ant]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- CreateComponent -->
+    <test name="linkComponent" duration-ms="661" started-at="2016-11-14T10:40:03Z" finished-at="2016-11-14T10:40:04Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="linkComponent(java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1acfe9b]" name="linkComponent" duration-ms="627" started-at="2016-11-14T16:10:03Z" finished-at="2016-11-14T16:10:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"success":true,"is_valid":true}]]>
+            </line>
+            <line>
+              <![CDATA[Actual Response body: = {"success":true,"is_valid":true}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- linkComponent -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1acfe9b]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:10:03Z" finished-at="2016-11-14T16:10:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@e9f560]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1acfe9b]" name="screenshot" is-config="true" duration-ms="33" started-at="2016-11-14T16:10:04Z" finished-at="2016-11-14T16:10:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=linkComponent status=SUCCESS method=Singletier.linkComponent(java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@1acfe9b] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- linkComponent -->
+    <test name="publishDesign" duration-ms="661" started-at="2016-11-14T10:40:04Z" finished-at="2016-11-14T10:40:04Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@154efe5]" name="createreport" is-config="true" duration-ms="1" started-at="2016-11-14T16:10:04Z" finished-at="2016-11-14T16:10:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1ec731e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="publishDesign()[pri:0, instance:com.gopaddle.utils.Singletier@154efe5]" name="publishDesign" duration-ms="625" started-at="2016-11-14T16:10:04Z" finished-at="2016-11-14T16:10:04Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d]]>
+            </line>
+            <line>
+              <![CDATA[Expected Status =  200]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"success":true,"tx_id":"1479120005671774503"}]]>
+            </line>
+            <line>
+              <![CDATA[Actual Response body: = {"tx_id":"JSONSTRING","success":true}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- publishDesign -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@154efe5]" name="screenshot" is-config="true" duration-ms="35" started-at="2016-11-14T16:10:04Z" finished-at="2016-11-14T16:10:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=publishDesign status=SUCCESS method=Singletier.publishDesign()[pri:0, instance:com.gopaddle.utils.Singletier@154efe5] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- publishDesign -->
+    <test name="launchApp" duration-ms="20757" started-at="2016-11-14T10:40:04Z" finished-at="2016-11-14T10:40:25Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@7d9cbb]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:10:04Z" finished-at="2016-11-14T16:10:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79de89]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="launchApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@7d9cbb]" name="launchApp" duration-ms="20711" started-at="2016-11-14T16:10:04Z" finished-at="2016-11-14T16:10:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sla-app]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8080]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[30552]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Launched Application ID : sla-app]]>
+            </line>
+            <line>
+              <![CDATA[External Port			  : 30552]]>
+            </line>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/d_b7907366g48b5g4cefgbdf7g936512b5875d]]>
+            </line>
+            <line>
+              <![CDATA[Expected Status =  200]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+            <line>
+              <![CDATA[get Response body: = {"tx_id":"1479120026371652025","success":true}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@7d9cbb]" name="screenshot" is-config="true" duration-ms="45" started-at="2016-11-14T16:10:25Z" finished-at="2016-11-14T16:10:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=launchApp status=SUCCESS method=Singletier.launchApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@7d9cbb] output=Launched Application ID : sla-app]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- launchApp -->
+    <test name="accessValidation" duration-ms="115728" started-at="2016-11-14T10:40:25Z" finished-at="2016-11-14T10:42:21Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="accessValidation(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@ecdf40]" name="accessValidation" duration-ms="115670" started-at="2016-11-14T16:10:25Z" finished-at="2016-11-14T16:12:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/AntExample/index.jsp]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Application :Success]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Insert title here</title></head><body><a href="HelloWorld">click Here-goPaddle Bluemeric ANTAPP DEMOnewapp</a></body></html>]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- accessValidation -->
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@ecdf40]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:10:25Z" finished-at="2016-11-14T16:10:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@10124d4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@ecdf40]" name="screenshot" is-config="true" duration-ms="56" started-at="2016-11-14T16:12:21Z" finished-at="2016-11-14T16:12:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=accessValidation status=SUCCESS method=Singletier.accessValidation(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@ecdf40] output=Application :Success]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- accessValidation -->
+    <test name="deleteApp" duration-ms="21370" started-at="2016-11-14T10:42:21Z" finished-at="2016-11-14T10:42:42Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@8122ba]" name="createreport" is-config="true" duration-ms="0" started-at="2016-11-14T16:12:21Z" finished-at="2016-11-14T16:12:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@18e40b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="deleteApp()[pri:0, instance:com.gopaddle.utils.Singletier@8122ba]" name="deleteApp" duration-ms="21338" started-at="2016-11-14T16:12:21Z" finished-at="2016-11-14T16:12:42Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/a_d9eb5ea7ged90g4c79g9310gd60cc256936e]]>
+            </line>
+            <line>
+              <![CDATA[a_d9eb5ea7ged90g4c79g9310gd60cc256936e Application Deleted ]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteApp -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@8122ba]" name="screenshot" is-config="true" duration-ms="31" started-at="2016-11-14T16:12:42Z" finished-at="2016-11-14T16:12:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteApp status=SUCCESS method=Singletier.deleteApp()[pri:0, instance:com.gopaddle.utils.Singletier@8122ba] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/app/a_d9eb5ea7ged90g4c79g9310gd60cc256936e]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- deleteApp -->
+    <test name="deleteDesign" duration-ms="670" started-at="2016-11-14T10:42:42Z" finished-at="2016-11-14T10:42:43Z">
+      <class name="com.gopaddle.utils.Singletier">
+        <test-method status="PASS" signature="createreport(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@14ede02]" name="createreport" is-config="true" duration-ms="1" started-at="2016-11-14T16:12:42Z" finished-at="2016-11-14T16:12:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@23a6d8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createreport -->
+        <test-method status="PASS" signature="deleteDesign(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@14ede02]" name="deleteDesign" duration-ms="621" started-at="2016-11-14T16:12:42Z" finished-at="2016-11-14T16:12:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sla-design]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d]]>
+            </line>
+            <line>
+              <![CDATA[Response Status = 204]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteDesign -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult, java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@14ede02]" name="screenshot" is-config="true" duration-ms="48" started-at="2016-11-14T16:12:43Z" finished-at="2016-11-14T16:12:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteDesign status=SUCCESS method=Singletier.deleteDesign(java.lang.String)[pri:0, instance:com.gopaddle.utils.Singletier@14ede02] output=Resource URI : http://api.stage.gopaddle.io/api/demogopaddle/design/d_b7907366g48b5g4cefgbdf7g936512b5875d]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ant-Git-AntBuilder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+      </class> <!-- com.gopaddle.utils.Singletier -->
+    </test> <!-- deleteDesign -->
+  </suite> <!-- Singletier - Ant-Git-AntBuilder -->
+</testng-results>

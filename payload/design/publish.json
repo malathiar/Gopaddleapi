@@ -1,0 +1,13 @@
+{
+		"input":
+			{
+					"operation":"publish"
+			},
+		"output":
+			{
+				"success":true,
+				"tx_id":"JSONSTRING"
+			}
+			
+			
+}

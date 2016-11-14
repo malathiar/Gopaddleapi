@@ -1,0 +1,14 @@
+{
+		"input":{
+			"operation":"link",
+			"from":5,
+			"to":6
+		},
+		"output":
+					
+			{
+				"success":true,
+				"is_valid":true
+			}
+							
+}

@@ -1,0 +1,15 @@
+{
+  "input":
+  		{
+	      "username":"admin",
+		  "password":"yVOQjS1etTiFNQe0",
+   		  "port":"443",
+   		  "host_ip":"8.35.192.33",
+   		  "kube_name":"cluster-1"
+      }, 
+  "output":
+      {
+   		 "success":true
+	}
+
+}
