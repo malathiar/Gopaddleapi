@@ -10,7 +10,7 @@
 	     <parameter testcase="listKubes" version="" path="" accesssublink="" altport="" appname="" kubname="testqa" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="getkubId" version="" path="" accesssublink="" altport="" appname="" kubname="testqa" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 	 </suite>
-	  <!-- 	  <suite suitename="ListofActions" classname="Singletier">
+	   	  <suite suitename="ListofActions" classname="Singletier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="sla-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="sla-design" repopath="https://github.com/sailakshmiv/antapp.git" auth="" repoprovider="github" build="ant" builder="Ant" startscript="" install="" postinstall="" preinstall="" platform="tomcat:7" ports="8080" />
 	    <parameter testcase="linkComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="1" targetlink="2" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/> 
@@ -41,7 +41,7 @@
 		  <parameter testcase="updateAppDeliveryOff" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="sla-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	 </suite>-->
+	 </suite>
 	<suite suitename="Ant-Git-AntBuilder" classname="Singletier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="sla-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="sla-design" repopath="https://github.com/sailakshmiv/antapp.git" auth="" repoprovider="github" build="ant" builder="Ant" startscript="" install="" postinstall="" preinstall="" platform="tomcat:7" ports="8080" />
@@ -52,7 +52,7 @@
 		 <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="sla-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
 	 </suite>
-	 <!--  <suite suitename="RubyOnRails-Git-NativeBuilder" classname="Singletier">
+	   <suite suitename="RubyOnRails-Git-NativeBuilder" classname="Singletier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slrb-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slrb-design" repopath="https://github.com/sailakshmiv/TicTacToe.git" auth="" repoprovider="github" build="" builder="Native" startscript="rails server -b 0.0.0.0" install="" postinstall="apt-get install nodejs -y &#38;&#38; apt-get install -y bundler &#38;&#38; bundle install" preinstall="" platform="ruby with rbenv:2.3.0" ports="3000" />
 	    <parameter testcase="linkComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="1" targetlink="2" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/> 
@@ -554,8 +554,8 @@
 		 <parameter testcase="accessValidation" version="" path="" accesssublink="/spring-example/" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slmy-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	 </suite>-->
-	<!-- <suite suitename="JavaMySQL1-Git-MavenBuilder" classname="Multitier">
+	 </suite>
+	 <suite suitename="JavaMySQL1-Git-MavenBuilder" classname="Multitier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slmy1-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slmy1-design" repopath="https://github.com/sailakshmiv/test-webapp.git" auth="" repoprovider="github" build="ant" builder="Ant" startscript="" install="" postinstall="" preinstall="" platform="tomcat:7" ports="8080" />
 	 	 <parameter testcase="createTwotierComponent" version="5.6" path="https://storage.googleapis.com/paddle-slkubmcation-donotdelete/practicedb.tgz" accesssublink="/var/lib/mysql" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="mysql" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports="3306" />
@@ -566,7 +566,7 @@
 		 <parameter testcase="accessValidation" version="" path="" accesssublink="/TestWebApp" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slmy1-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	 </suite> -->
+	 </suite> 
 	 <suite suitename="NodeMySQL-Git-MavenBuilder" classname="Multitier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slndnew-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slndnew-design" repopath="https://github.com/sailakshmiv/Quiz-Application.git" auth="" repoprovider="github" build="" builder="Native" startscript="npm start" install="" postinstall="npm install" preinstall="" platform="nodejs:v5.0" ports="8000" />
@@ -576,10 +576,10 @@
 		 <parameter testcase="publishDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="launchApp" version="" path="" accesssublink="" altport="30604" appname="slndnew-app" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports="8000"/> 
 		 <parameter testcase="accessValidation" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
-		 <!-- <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
+		  <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slndnew-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	  --></suite>
-	<!--  <suite suitename="NodeMySQL1-Git-MavenBuilder" classname="Multitier">
+	  </suite>
+	  <suite suitename="NodeMySQL1-Git-MavenBuilder" classname="Multitier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnd1m-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnd1m-design" repopath="https://github.com/sailakshmiv/WebApplicationOnCurdOperations.git" auth="" repoprovider="github" build="" builder="Native" startscript="node app.js" install="" postinstall="npm install" preinstall="" platform="nodejs:v5.0" ports="4300" />
 	 	 <parameter testcase="createTwotierComponent" version="5.5" path="https://storage.googleapis.com/paddle-testautomcation-donotdelete/nodejs.tgz" accesssublink="/var/lib/mysql" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="mysql" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports="3306" />
@@ -686,9 +686,9 @@
 		 <parameter testcase="accessValidation" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm8-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	 </suite>-->
+	 </suite>
 	 
-	<!--  <suite suitename="NodeMongo2-Git-MavenBuilder" classname="Multitier">
+	  <suite suitename="NodeMongo2-Git-MavenBuilder" classname="Multitier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm9-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm9-design" repopath="https://github.com/sailakshmiv/CheerioMongo-scraper.git" auth="" repoprovider="github" build="" builder="Native" startscript="node server.js" install="" postinstall="npm install" preinstall="" platform="nodejs:v5.0" ports="3000" />
 	 	 <parameter testcase="createTwotierComponent" version="3.2" path="" accesssublink="/var/lib/mongodb" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="mongodb" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports="27017" />
@@ -699,8 +699,8 @@
 		 <parameter testcase="accessValidation" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		  <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm9-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	  </suite>  -->
-	<!--  <suite suitename="NodeMongo3-Git-MavenBuilder" classname="Multitier">
+	  </suite>  
+	  <suite suitename="NodeMongo3-Git-MavenBuilder" classname="Multitier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm10-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm10-design" repopath="https://github.com/sailakshmiv/booktrade-21clouds.git" auth="" repoprovider="github" build="" builder="Native" startscript="npm start" install="" postinstall="npm install" preinstall="" platform="nodejs:v0.10.25" ports="3000" />
 	 	 <parameter testcase="createTwotierComponent" version="3.2" path="" accesssublink="/var/lib/mongodb" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="mongodb" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports="27017" />
@@ -893,7 +893,7 @@
 		 <parameter testcase="accessValidation" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm13-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	 </suite> -->
+	 </suite> 
 	 
 	 <suite suitename="NodeMongo7-Git-MavenBuilder" classname="Multitier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm14-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
@@ -904,10 +904,10 @@
 		 <parameter testcase="publishDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="launchApp" version="" path="" accesssublink="" altport="30629" appname="slnm14-app" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports="9100"/> 
 		 <parameter testcase="accessValidation" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
-		 <!-- <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
+		  <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm14-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	  --></suite> 
-	<!--    <suite suitename="NodeMongo8-Git-MavenBuilder" classname="Multitier">
+	  </suite> 
+	    <suite suitename="NodeMongo8-Git-MavenBuilder" classname="Multitier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm15-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm15-design" repopath="https://github.com/sailakshmiv/mongodb-realtime-pubsub.git" auth="" repoprovider="github" build="" builder="Native" startscript="node app" install="" postinstall="npm install" preinstall="" platform="nodejs:v5.0" ports="3000" />
 	 	 <parameter testcase="createTwotierComponent" version="3.2" path="https://storage.googleapis.com/paddle-slkubmcation-donotdelete/chat.tgz" accesssublink="/var/lib/mongodb" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="mongodb" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports="27017" />
@@ -990,8 +990,8 @@
 		 <parameter testcase="accessValidation" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm21-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	 </suite>-->
-	<!--  <suite suitename="NodeMongo15-Git-MavenBuilder" classname="Multitier">
+	 </suite>
+	  <suite suitename="NodeMongo15-Git-MavenBuilder" classname="Multitier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm22-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm22-design" repopath="https://github.com/sailakshmiv/AngularMongo.git" auth="" repoprovider="github" build="" builder="Native" startscript="node app.js" install="" postinstall="npm install &#38;&#38; apt-get install git -y &#38;&#38; npm install bower -g &#38;&#38; bower install &#45;&#45;allow-root" preinstall="" platform="nodejs:v0.10.25" ports="3000" />
 	 	 <parameter testcase="createTwotierComponent" version="3.2" path="" accesssublink="/var/lib/mongodb" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="mongodb" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports="27017" />
@@ -1002,8 +1002,8 @@
 		 <parameter testcase="accessValidation" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm22-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	 </suite>  -->
-	<!--  <suite suitename="NodeMongo16-Git-MavenBuilder" classname="Multitier">
+	 </suite>  
+	  <suite suitename="NodeMongo16-Git-MavenBuilder" classname="Multitier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm23-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm23-design" repopath="https://github.com/sailakshmiv/nodejs-mongodb-angularjs.git" auth="" repoprovider="github" build="" builder="Native" startscript="node server.js" install="" postinstall="npm install" preinstall="" platform="nodejs:v5.0" ports="3000" />
 	 	 <parameter testcase="createTwotierComponent" version="3.2" path="" accesssublink="/var/lib/mongodb" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="mongodb" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports="27017" />
@@ -1146,8 +1146,8 @@
 		 <parameter testcase="accessValidation" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm34-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	 </suite> -->
-	 <!--  <suite suitename="NodeMongo28-Git-MavenBuilder" classname="Multitier">
+	 </suite> 
+	   <suite suitename="NodeMongo28-Git-MavenBuilder" classname="Multitier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm35-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm35-design" repopath="https://github.com/sailakshmiv/A-small-Restful-web-app-with-node-express-4-and-mongo.git" auth="" repoprovider="github" build="" builder="Native" startscript="node app.js" install="" postinstall="npm install method-override &#59; npm install" preinstall="" platform="nodejs:v0.10.25" ports="3000" />
 	 	 <parameter testcase="createTwotierComponent" version="3.2" path="" accesssublink="/var/lib/mongodb" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="mongodb" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports="27017" />
@@ -1158,8 +1158,8 @@
 		 <parameter testcase="accessValidation" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm35-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	 </suite>    -->
-	<!--   <suite suitename="NodeMongo29-Git-MavenBuilder" classname="Multitier">
+	 </suite>    
+	   <suite suitename="NodeMongo29-Git-MavenBuilder" classname="Multitier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm36-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm36-design" repopath="https://github.com/sailakshmiv/express-mongo-bootstrap.git" auth="" repoprovider="github" build="" builder="Native" startscript="node server.js" install="" postinstall="npm install method-override &#59; npm install" preinstall="" platform="nodejs:v0.10.25" ports="4000" />
 	 	 <parameter testcase="createTwotierComponent" version="3.2" path="" accesssublink="/var/lib/mongodb" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="mongodb" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports="27017" />
@@ -1303,8 +1303,8 @@
 		 <parameter testcase="accessValidation" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slnm46-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	 </suite> -->
-	<!--  <suite suitename="PythonMongo6-Git-MavenBuilder" classname="Multitier">
+	 </suite> 
+	  <suite suitename="PythonMongo6-Git-MavenBuilder" classname="Multitier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slpy1-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slpy1-design" repopath="https://github.com/sailakshmiv/flask_mongo.git" auth="" repoprovider="github" build="" builder="Native" startscript="python app.py" install="" postinstall="pip install flask &#38;&#38; pip install pymongo" preinstall="" platform="python:2.7" ports="5000" />
 	 	 <parameter testcase="createTwotierComponent" version="3.2" path="" accesssublink="/var/lib/mongodb" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="mongodb" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports="27017" />
@@ -1327,8 +1327,8 @@
 		 <parameter testcase="accessValidation" version="" path="" accesssublink="/auth/register" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slpy2-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	 </suite> -->
-	<!--   <suite suitename="RubyMongo7-Git-MavenBuilder" classname="Multitier">
+	 </suite> 
+	   <suite suitename="RubyMongo7-Git-MavenBuilder" classname="Multitier">
 		 <parameter testcase="createDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slrb7-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="CreateComponent" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slrb7-design" repopath="https://github.com/sailakshmiv/MongoOnRails.git" auth="" repoprovider="github" build="" builder="Native" startscript="rails s" install="" postinstall="apt-get update &#59; apt-get install bundler -y &#59; gem install bundler &#59; bundle install &#59; apt-get install nodejs -y &#59; bundle exec rake db:create &#59; bundle exec rake db:migrate" preinstall="" platform="ruby with rvm:2.3.1" ports="3000" />
 	 	 <parameter testcase="createTwotierComponent" version="3.2" path="" accesssublink="/var/lib/mongodb" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="mongodb" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports="27017" />
@@ -1573,7 +1573,7 @@
 		 <parameter testcase="accessValidation" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		 <parameter testcase="deleteApp" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>
 		<parameter testcase="deleteDesign" version="" path="" accesssublink="" altport="" appname="" kubname="" sourcelink="" targetlink="" designname="slgo23-design" repopath="" auth="" repoprovider="" build="" builder="" startscript="" install="" postinstall="" preinstall="" platform="" ports=""/>  
-	 </suite>-->
+	 </suite>
 	   
 </XmltoJava>
 
