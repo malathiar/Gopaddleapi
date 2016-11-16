@@ -1,6 +1,7 @@
 package com.gopaddle.suite;
 
 import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -50,7 +51,25 @@ public class TestSuite implements ITestListener {
 		status = stat;
 	}
 
-		
+	public static void login() throws IOException {
+		try {
+			File file = new File(workspace + "/file.Properties");
+System.out.println(workspace + "/file.Properties");
+			if (file.delete()) {
+				System.out.println("file not available");
+			} else {
+				System.out.println("file not availableelse");
+			}
+			
+			file.createNewFile();
+			Thread.sleep(10000);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	
+	}
+	
 
 	private void runTests(TestNG tng) throws JAXBException, Exception {
 		XmltoJava xmltojava;
@@ -95,6 +114,7 @@ public class TestSuite implements ITestListener {
 				parameters.put("version", xmltojava.getSuite()[k].getParameter()[l].getVersion());
 				parameters.put("install", xmltojava.getSuite()[k].getParameter()[l].getInstall());
 				parameters.put("auth", xmltojava.getSuite()[k].getParameter()[l].getAuth());
+				parameters.put("Depends", xmltojava.getSuite()[k].getParameter()[l].getDepends());
 				/*System.out.println("path"+xmltojava.getSuite()[k].getParameter()[l].getRepopath());
 				System.out.println("provider"+xmltojava.getSuite()[k].getParameter()[l].getRepoprovider());
 				System.out.println("build"+xmltojava.getSuite()[k].getParameter()[l].getBuild());
@@ -134,8 +154,10 @@ public class TestSuite implements ITestListener {
 		
 		TestSuite rtest = new TestSuite();
 		TestNG tng = new TestNG();
-		report = new ExtentReports(projectHome+"/test-output/ExtendedReports"+timeStamp+".html");
+		report = new ExtentReports(projectHome+"/test-output"+timeStamp+"/ExtendedReports"+timeStamp+".html");
 		report.loadConfig(new File(projectHome+"/extent-config.xml"));
+		tng.setOutputDirectory("test-output"+timeStamp+"/");
+		login();
 		rtest.runTests(tng);
 		
 		}	
