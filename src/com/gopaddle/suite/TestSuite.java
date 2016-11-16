@@ -75,7 +75,7 @@ System.out.println(workspace + "/file.Properties");
 		XmltoJava xmltojava;
 
 		xmltojava = (XmltoJava) com.gopaddle.suite.GenericClass
-				.unmarshallClass(projectHome + "/src" + "/" + "config.xml", XmltoJava.class);
+				.unmarshallClass(projectHome + "/" + "config.xml", XmltoJava.class);
 		for (int k = 0; k < xmltojava.getSuite().length; k++) {
 
 			XmlSuite suite = new XmlSuite();
