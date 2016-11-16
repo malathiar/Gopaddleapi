@@ -95,7 +95,15 @@ public class XmltoJava extends GenericClass {
 		private String path;
 		private String install;
 		private String auth;
+		private String depends;
 		
+		@XmlAttribute
+		public String getDepends() {
+			return depends;
+		}
+		public void setDepends(String depends) {
+			this.depends = depends;
+		}
 		@XmlAttribute
 		public String getAuth() {
 			return auth;
@@ -259,8 +267,9 @@ public class XmltoJava extends GenericClass {
 					+ ", ports=" + ports + ", designname=" + designname + ", sourcelink=" + sourcelink + ", targetlink="
 					+ targetlink + ", kubname=" + kubname + ", altport=" + altport + ", appname=" + appname
 					+ ", accesssublink=" + accesssublink + ", version=" + version + ", path=" + path + ", install="
-					+ install + ", auth=" + auth + "]";
+					+ install + ", auth=" + auth + ", depends=" + depends + "]";
 		}
+		
 		
 		
 		
