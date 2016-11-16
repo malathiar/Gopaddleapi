@@ -9,6 +9,7 @@ import org.json.JSONException;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -29,7 +30,9 @@ import com.relevantcodes.extentreports.LogStatus;
 	TestClass utility=new TestClass();
 	String workspace=System.getProperty("user.dir");
 	ExtentReports report=TestSuite.report;
+	
 	ExtentTest test=TestSuite.test;
+	Properties prop = new Properties();
 	@Parameters({"suiteName"})
 	@BeforeMethod
 	 public void createreport(ITestContext arg0,@Optional String suiteName){
@@ -42,125 +45,206 @@ import com.relevantcodes.extentreports.LogStatus;
 		}
 	 }
 	@Parameters("kubname")
-	@Test
+	@Test  ( timeOut = 600000 ) 
 	public void createKubes(@Optional String kubname) throws IOException, JSONException{
 		utility.createKubes(kubname);
 	}
 	@Parameters()
-	@Test
+	@Test  ( timeOut = 600000 ) 
 	public void connection() throws IOException, JSONException{
 		utility.connection();
 	}
-	@Parameters("kubname")
-	@Test
-	public void getkubId(@Optional String kubname) throws IOException, JSONException{
+	@Parameters({"kubname","Depends","suiteName"})
+	@Test  ( timeOut = 1000000 ) 
+	public void getkubId(@Optional String kubname,@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+	
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
 		utility.getkubId(kubname);
 	}
 	@Parameters("designname")
-	@Test
+	@Test  ( timeOut = 600000 ) 
 	public void createDesign(@Optional String designname) throws IOException, JSONException{
 		utility.createDesign(designname);
 	}
-	@Parameters({"designname","repopath","auth","repoprovider","build","builder","platform","ports","install","postinstall","preinstall","startscript"})
-	@Test
-	public void CreateComponent(@Optional String designname,@Optional String repopath,@Optional String auth,@Optional String repoprovider,@Optional String build,@Optional String builder,@Optional String platform,@Optional String ports,@Optional String install,@Optional String postinstall,@Optional String preinstall,@Optional String startscript) throws  IOException, AWTException, InterruptedException{
+	@Parameters({"designname","repopath","auth","repoprovider","build","builder","platform","ports","install","postinstall","preinstall","startscript","Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void CreateComponent(@Optional String designname,@Optional String repopath,@Optional String auth,@Optional String repoprovider,@Optional String build,@Optional String builder,@Optional String platform,@Optional String ports,@Optional String install,@Optional String postinstall,@Optional String preinstall,@Optional String startscript,@Optional String Depends,@Optional String suiteName) throws  IOException, AWTException, InterruptedException{
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
+		
 		utility.CreateComponent(designname,repopath,auth,repoprovider, build, builder, platform, ports,install, postinstall, preinstall, startscript);
 	
 	}
-	@Parameters({"sourcelink","targetlink"})
-	@Test
-	public void linkComponent(@Optional String sourcelink,@Optional String targetlink) throws IOException, JSONException{
+	@Parameters({"sourcelink","targetlink","Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void linkComponent(@Optional String sourcelink,@Optional String targetlink,@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
 		utility.linkComponent(sourcelink,targetlink);
 	}
-	@Parameters()
-	@Test
-	public void publishDesign() throws IOException, JSONException{
+	@Parameters({"Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void publishDesign(@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
 		utility.publishDesign();
 	}
-	@Parameters({"appname","ports","altport"})
-	@Test
-	public void launchApp(@Optional String appname,@Optional String ports,@Optional String altport) throws IOException, JSONException, InterruptedException{
+	@Parameters({"appname","ports","altport","Depends","suiteName"})
+	@Test  ( timeOut = 1000000 ) 
+	public void launchApp(@Optional String appname,@Optional String ports,@Optional String altport,@Optional String Depends,@Optional String suiteName) throws IOException, JSONException, InterruptedException{
+		
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
 		utility.launchApp(appname,ports,altport);
 	}
-	@Parameters()
-	@Test
-	public void updateAppStateOn() throws IOException, JSONException{
+	@Parameters({"Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void updateAppStateOn(@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
 		utility.updateApplicationStateOn();
 	}
-	@Parameters()
-	@Test
-	public void updateAppStateOff() throws IOException, JSONException{
+	@Parameters({"Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void updateAppStateOff(@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
 		utility.updateAppStateOff();
 	}
-	@Parameters()
-	@Test
-	public void updateAppDeliveryON() throws IOException, JSONException{
+	@Parameters({"Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void updateAppDeliveryON(@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
+		
 		utility.updateApplicationStateOn();
 		utility.updateApplicationDeliveryON();
 	}
-	@Parameters()
-	@Test
-	public void updateAppDeliveryOff() throws IOException, JSONException{
+	@Parameters({"Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void updateAppDeliveryOff(@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
+		
 		utility.updateApplicationDeliveryOff();
 	}
-	@Parameters({"accesssublink"})
-	@Test
-	public void accessValidation(@Optional String accesssublink) throws IOException, JSONException, InterruptedException{
+	@Parameters({"accesssublink","Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void accessValidation(@Optional String accesssublink,@Optional String Depends,@Optional String suiteName) throws IOException, JSONException, InterruptedException{
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
+		
 		utility.accessValidation(accesssublink);
 	}
-	@Parameters("designname")
-	@Test
-	public void deleteDesign(@Optional String designname) throws IOException, JSONException{
+	@Parameters({"designname","Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void deleteDesign(@Optional String designname,@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
+		
 		utility.deleteDesign(designname);
 	}
-	@Parameters()
-	@Test
-	public void deleteApp() throws IOException, JSONException{
+	@Parameters({"Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void deleteApp(@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
+		
 		utility.deleteApp();
 	}
-	@Parameters()
-	@Test
-	public void listAllDesigns() throws IOException, JSONException{
+	@Parameters({"Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void listAllDesigns(@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
+		
 		utility.listAllDesigns();
 	}
-	@Parameters()
-	@Test
-	public void searchSingleDesign() throws IOException, JSONException{
+	@Parameters({"Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void searchSingleDesign(@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
+		
 		utility.searchSingleDesign();
 	}
-	@Parameters()
-	@Test
-	public void deleteComponent() throws IOException, JSONException{
+	@Parameters({"Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void deleteComponent(@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
+		
 		utility.deleteComponent();
 	}
-	@Parameters("kubname")
-	@Test
+	@Parameters({"kubname"})
+	@Test  ( timeOut = 1000000 ) 
 	public void listKubes(@Optional String kubname) throws IOException, JSONException{
+		
 		utility.listKubes(kubname);
 	}
-	@Parameters()
-	@Test
-	public void listApps() throws IOException, JSONException{
+	@Parameters({"Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void listApps(@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
+		
 		utility.listApps();
 	}
-	@Parameters()
-	@Test
-	public void searchApp() throws IOException, JSONException{
+	@Parameters({"Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void searchApp(@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
+		
 		utility.searchApp();
 	}
-	@Parameters()
-	@Test
-	public void searchComponent() throws IOException, JSONException{
+	@Parameters({"Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void searchComponent(@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
+		
 		utility.searchComponent();
 	}
-	@Parameters()
-	@Test
-	public void updateComponent() throws IOException, JSONException{
+	@Parameters({"Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void updateComponent(@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
+		
 		utility.updateComponent();
 	}
-	@Parameters()
-	@Test
-	public void updateDesign() throws IOException, JSONException{
+	@Parameters({"Depends","suiteName"})
+	@Test  ( timeOut = 600000 ) 
+	public void updateDesign(@Optional String Depends,@Optional String suiteName) throws IOException, JSONException{
+		FileInputStream skip = new FileInputStream(workspace + "/file.Properties");
+		  prop.load(skip);
+		  if (prop.getProperty(suiteName+Depends).equals("FAIL") || prop.getProperty(suiteName+Depends).equals("SKIP") ) {throw new SkipException("Skip");}
+		
 		utility.updateDesign();
 	}
 	@Parameters({"suiteName"})
@@ -181,6 +265,18 @@ import com.relevantcodes.extentreports.LogStatus;
 		      prop.put(testcase, "SKIP"); 
 		      test.log(LogStatus.SKIP,arg0.getThrowable());
 		     }
+		     try {
+			      FileInputStream fs = new FileInputStream(workspace + "/file.Properties");
+			      prop.load(fs);
+			      fs.close();
+			      FileOutputStream fos = new FileOutputStream(workspace + "/file.Properties");
+			      prop.store(fos, "Test Result");
+		
+			      fos.flush();
+			     } catch (IOException e) { 
+			      // TODO Auto-generated catch block
+			      e.printStackTrace();
+			     }
 			report.endTest(test);
 			report.flush();
 		}
